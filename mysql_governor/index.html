@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MySQL Governor | Documentation</title>
+    <meta name="description" content="Kernelcare documentation">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.166b4f65.css" as="style"><link rel="preload" href="/assets/js/app.0abf6f2a.js" as="script"><link rel="preload" href="/assets/js/22.c03a1b94.js" as="script"><link rel="prefetch" href="/assets/js/10.637ec29d.js"><link rel="prefetch" href="/assets/js/11.5bc4e224.js"><link rel="prefetch" href="/assets/js/12.86ab74a0.js"><link rel="prefetch" href="/assets/js/13.57ab5c71.js"><link rel="prefetch" href="/assets/js/14.fd3e69ee.js"><link rel="prefetch" href="/assets/js/15.ae08bd81.js"><link rel="prefetch" href="/assets/js/16.c78fdb9f.js"><link rel="prefetch" href="/assets/js/17.1fdd51cc.js"><link rel="prefetch" href="/assets/js/18.2e9e3c46.js"><link rel="prefetch" href="/assets/js/19.6a071eb7.js"><link rel="prefetch" href="/assets/js/20.03d7f633.js"><link rel="prefetch" href="/assets/js/21.c64caaaa.js"><link rel="prefetch" href="/assets/js/23.a5cd9404.js"><link rel="prefetch" href="/assets/js/24.b90fb854.js"><link rel="prefetch" href="/assets/js/25.42c7c91b.js"><link rel="prefetch" href="/assets/js/26.159622d1.js"><link rel="prefetch" href="/assets/js/27.e8de38ef.js"><link rel="prefetch" href="/assets/js/28.ac2756db.js"><link rel="prefetch" href="/assets/js/3.5515951d.js"><link rel="prefetch" href="/assets/js/4.4d6450cb.js"><link rel="prefetch" href="/assets/js/5.90579adc.js"><link rel="prefetch" href="/assets/js/6.3f73b2ab.js"><link rel="prefetch" href="/assets/js/7.a073d98e.js"><link rel="prefetch" href="/assets/js/8.29039cd1.js"><link rel="prefetch" href="/assets/js/9.ef4b91a3.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.28e1d2e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.166b4f65.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Documentation" class="logo"> <span class="site-name can-hide">Documentation</span></a> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value="Search"> <!----></div> <div class="links" style="max-width:nullpx;"><a href="https://cloudlinux.com/trial" target="_blank" class="btn">
+      Try Free
+    </a> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Content</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/cloudlinux_installation/" class="sidebar-link">Installation</a></li><li><a href="/limits/" class="sidebar-link">Limits</a></li><li><a href="/lve_manager/" class="sidebar-link">LVE Manager</a></li><li><a href="/reseller_limits/" class="sidebar-link">Reseller Limits</a></li><li><a href="/lve-stats_2/" class="sidebar-link">LVE-Stats 2</a></li><li><a href="/cagefs/" class="sidebar-link">CageFS</a></li><li><a href="/mysql_governor/" class="active sidebar-link">MySQL Governor</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql_governor/#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#removing" class="sidebar-link">Removing</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#modes-of-operation" class="sidebar-link">Modes Of Operation</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#configuration" class="sidebar-link">Configuration</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#starting-and-stopping" class="sidebar-link">Starting And Stopping</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#mapping-a-user-to-database" class="sidebar-link">Mapping a User to Database</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#log-files" class="sidebar-link">Log Files</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#change-mysql-version" class="sidebar-link">Change MySQL version</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#command-line-tools" class="sidebar-link">Command-line Tools</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/mysql_governor/#dbtop" class="sidebar-link">dbtop</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#dbctl" class="sidebar-link">dbctl</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#lveinfo-dbgov" class="sidebar-link">lveinfo --dbgov</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#dbgovchart" class="sidebar-link">dbgovchart</a></li></ul></li><li class="sidebar-sub-header"><a href="/mysql_governor/#backing-up-mysql" class="sidebar-link">Backing Up MySQL</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#abrt" class="sidebar-link">abrt</a></li><li class="sidebar-sub-header"><a href="/mysql_governor/#troubleshooting" class="sidebar-link">Troubleshooting</a></li></ul></li><li><a href="/php_selector/" class="sidebar-link">PHP Selector</a></li><li><a href="/python_and_ruby_selector/" class="sidebar-link">Python</a></li><li><a href="/node_js_selector/" class="sidebar-link">Node.js Selector</a></li><li><a href="/inodes_limits/" class="sidebar-link">inodes</a></li><li><a href="/kernel_settings/" class="sidebar-link">Kernel Settings</a></li><li><a href="/apache_mod_lsapi/" class="sidebar-link">Apache mod_lsapi</a></li><li><a href="/cloudlinux-fchange/" class="sidebar-link">File Change API</a></li><li><a href="/mod_proctitle/" class="sidebar-link">mod_proctitle</a></li><li><a href="/additional_packages/" class="sidebar-link">Additional Packages</a></li><li><a href="/integration_guide/" class="sidebar-link">Integration Guide</a></li><li><a href="/partner_portal/" class="sidebar-link">Partner Portal</a></li><li><a href="/cloudlinux_network/" class="sidebar-link">CloudLinux Network</a></li><li><a href="/cloudlinux_whmcs_plugin/" class="sidebar-link">CloudLinux WHMCS Plugin</a></li><li><a href="/deprecated/" class="sidebar-link">Deprecated</a></li><li><a href="/hardware_compatibility/" class="sidebar-link">Hardware Compatibility</a></li><li><a href="/cloudlinux_life-cycle/" class="sidebar-link">CloudLinux Life cycle</a></li><li><a href="/downloading_documentation/" class="sidebar-link">Downloading Documentation</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="mysql-governor"><a href="#mysql-governor" aria-hidden="true" class="header-anchor">#</a> MySQL Governor</h1> <p>[ 0.8-32+]</p> <p>is software to monitor and restrict MySQL usage in shared hosting environment. The monitoring is done via resource usage statistics per each MySQL thread.</p> <p>can also kill off slow queries.</p> <p>has multiple modes of operations, depending on the configuration. It can work in monitor only mode, or it can use different throttling scenarious.</p> <p>allows to restrict customers who use too much resources. It supports following limits:</p> <table><thead><tr><th></th> <th></th> <th></th></tr></thead> <tbody><tr><td></td> <td>%</td> <td>speed relative to one core. 150% would mean one and a half cores</td></tr> <tr><td></td> <td>bytes</td> <td>bytes read. Cached reads are not counted, only those that were actually read from disk will be counted</td></tr> <tr><td></td> <td>bytes</td> <td>bytes written. Cached writes are not counted, only once data is written to disk, it is counted</td></tr></tbody></table> <p>You can set different limits for different periods: current, short, med, long. By default those periods are defined as 1 second, 5 seconds, 1 minute and 5 minutes. They can be re-defined using <a href="/mysql_governor_configuration/">configuration file</a> . The idea is to use larger acceptable values for shorter periods. Like you could allow a customer to use two cores (200%) for one second, but only 1 core (on average) for 1 minute, and only 70% within 5 minutes. That would make sure that customer can burst for short periods of time.</p> <p>When customer is restricted, the customer will be placed into special LVE with ID 3. All restricted customers will be placed into that LVE, and you can control amount of resources available to restricted customers. Restricted customers will also be limited to only 30 concurrent connections. This is done so they wouldn't use up all the MySQL connections to the server.</p> <h2 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h2> <p><strong>_ _</strong></p> <p>To install on your server install package at first:</p> <p>Then configure properly.</p> <p>The installation is currently supported only on , as well as on servers without control panel.</p> <p>If you are installing on a server running MySQL already, set your current MySQL version before calling installation script:</p> <p>Please make sure to specify your current MySQL version instead of XX as follows:</p> <p>55 — MySQL v5.5
+56 — MySQL v5.6
+57 — MySQL v5.7</p> <p>If you are installing on a server running already, do instead:</p> <p>Please make sure to specify your current version instead of as follows:</p> <p>55 — MariaDB v5.5
+100 — MariaDB v10.0
+101 — MariaDB v10.1
+102 — MariaDB v10.2
+103 — MariaDB v10.3</p> <p>Installation for [requires 1.1-22+ or 1.2-21+]:</p> <p>Please note that will be updated from repositories.</p> <p>If you are installing on a server without MySQL at all, you have an opportunity to choose desired MySQL version to be installed with installation script. Use flag before calling the installation script:</p> <p>could be chosen from the list of versions currently supported by :</p> <p>Generally, and channels contain different version of MySQL packages - contains newer version than</p> <p>Starting with version 1.2 when installing asks for a confirmation of a database version to be installed. To avoid such behavior for the automatic installations, please use flag.</p> <p>For example:</p> <p>Please note that restore of previous packages in case of failed installation would also be confirmed with flag.</p> <h2 id="removing"><a href="#removing" aria-hidden="true" class="header-anchor">#</a> Removing</h2> <p>To remove :</p> <div class="language- extra-class"><pre class="language-text"><code>$ /usr/share/lve/dbgovernor/mysqlgovernor.py --delete
+</code></pre></div><p>The script will install original MySQL server, and remove .</p> <h2 id="modes-of-operation"><a href="#modes-of-operation" aria-hidden="true" class="header-anchor">#</a> Modes Of Operation</h2> <p><strong>[</strong></p> <p>has multiple modes of operation. Some of them are experimental at this moment.
+Mode:
+In this mode will not throttle customer's queries, instead it will let you monitor the MySQL usage to see the abusers at any given moment of time (and historically). This mode is good when you are just starting and want to see what is going on
+In that mode once customer reaches the limits specified in the , all customer's queries will be running inside LVE with id 3. This means that when you have 5 customers restricted at the same time, all queries for all those 5 customers will be sharing same LVE. The larger the number of restricted customers - the less resources per restricted customer will be available
+In that mode, once user goes over the limits specified in the , all customer's queries will execute inside that user's LVE. We believe this mode will help with the condition when the site is still fast, but MySQL is slow (restricted) for that user. If someone abuses MySQL, it will cause queries to share LVE with PHP processes, and PHP processes will also be throttled, causing less of a new queries being sent to MySQL. _Requires  _
+This way there are no need for separate limits for MySQL. Depending on overhead we see in the future, we might decide to use it as a primary way of operating . The benefits of this approach is that limits are applied to both PHP &amp; MySQL at the same time, all the time, preventing any spikes what so ever. _Requires _</p> <p>If file is absent on the server, &quot; &quot; mode works emulate &quot; &quot;.</p> <p>With and mode, once user is restricted, the queries for that user will be limited as long as user is using more than limits specified. After a minute that user is using less, we will unrestricted that user.</p> <p>You can specify modes of operation using or by changing <a href="/mysql_governor_configuration/">configuration file</a> .
+file is located in</p> <h2 id="configuration"><a href="#configuration" aria-hidden="true" class="header-anchor">#</a> Configuration</h2> <p>configuration is located in</p> <p>It is best to modify it using tool.</p> <p>Once configuration file is updated, please, restart the using:</p> <div class="language- extra-class"><pre class="language-text"><code>$ service db_governor restart
+</code></pre></div><p>Example configuration:</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;governor&gt;
+ 
+&lt;!--  'off' - do not throttle anything, monitoring only --&gt;
+&lt;!--  'abusers' - when user reaches the limit, put user's queries into LVE for that user --&gt;
+&lt;!--  'all' - user's queries always run inside LVE for that user --&gt;
+&lt;!--  'single' - single LVE=3 for all abusers. --&gt;
+&lt;!-- 'on' - deprecated (old restriction type) --&gt;
+&lt;!-- To change resource usage of restricted user in LVE mode use command /usr/sbin/lvectl set 3 --cpu=&lt;new value&gt; --ncpu=&lt;new value&gt; --io=&lt;new value&gt; --        save-all-parameters --&gt;
+&lt;lve use=&quot;on|single|off|abusers|all&quot;/&gt;
+ 
+&lt;!-- connection information --&gt;
+&lt;!-- If host, login and password are not present, this information is taken from /etc/my.cnf and ~root/.my.cnf --&gt;
+&lt;!-- Use symbol specified in prefix to figure out hosting accounts (mysql username will be split using prefix_separator, and first part will be used as account name). If prefix is not set, or empty -- don’t use prefixes/accounts --&gt;
+ 
+&lt;!-- db governor will try to split MySQL user names using prefix separator (if present)and statistics will be aggregated for the prefix (account name) --&gt;
+&lt;connector host=&quot;...&quot; login=&quot;...&quot; password=&quot;..&quot; prefix_separator=&quot;_&quot;/&gt;
+ 
+&lt;!-- Intervals define historical intervals for burstable limits. In seconds --&gt;
+&lt;intervals short=&quot;5&quot; mid=&quot;60&quot; long=&quot;300&quot;/&gt;
+ 
+&lt;!-- log all errors/debug info into this log --&gt;
+&lt;log file=”/var/log/dbgovernor-error.log” mode=”DEBUG|ERROR”/&gt;
+ 
+&lt;!-- s -- seconds, m -- minutes, h -- hours, d -- days --&gt;
+&lt;!-- on restart, restrict will disappear --&gt;
+&lt;!-- log file will contain information about all restrictions that were take --&gt;
+&lt;!-- timeout - penalty period when user not restricted, but if he hit his limit during this period he will be restricted with higher level of restrict (for more long time) --        &gt;
+&lt;!- level1, level2, level3, level4 - period of restriction user for different level of restriction. During this period all user's requests will be placed into LVE container         --&gt;
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>&lt;!-- if user hits any of the limits during period of time specified in timeout, higher         level of restrict will be used to restrict user. If user was already on level4, level4         will be applied again --&gt;
+&lt;!-- attribute format set an restrict log format:
+SHORT -  restrict info only
+MEDIUM - restrict info, _all_tracked_values_
+LONG - restrict info, _all_tracked_values_, load average and vmstat info
+VERYLONG - restrict info, _all_tracked_values_, load average and vmstat info, slow query info --&gt;
+&lt;!-- script -- path to script to be triggered when account is restricted --&gt;
+&lt;!-- user_max_connections - The number of simultaneous connections of blocked user (in LVE mode) --&gt;
+ 
+&lt;!-- restriction levels/format are deprecated --&gt;
+&lt;restrict level1=&quot;60s&quot; level2=&quot;15m&quot; level3=&quot;1h&quot; level4=&quot;1d&quot; timeout=&quot;1h&quot;
+log=&quot;/var/log/dbgovernor-restrict.log&quot; format=&quot;SHORT|MEDIUM|LONG|VERYLONG&quot;
+script=&quot;/path/to/script&quot;
+user_max_connections=&quot;30&quot;/&gt;
+ 
+&lt;!-- period (deprecated) - period based restriction that has multiple levels (see above) --&gt;
+&lt;!-- limit (by default) - when user hits limits, the account will be marked as restricted and if user does not hit  limit again during &quot;unlimit=1m&quot; account will be unrestricted. This mode doesn't have any additional levels/penalties. --&gt;
+&lt;restrict_mode use=&quot;period|limit&quot; unlimit=&quot;1m&quot;/&gt;
+
+&lt;!-- killing slow SELECT queries (no other queries will be killed) --&gt;
+&lt;!-- if &quot;log&quot; attribute was set all killed queries will be saved in log file --&gt;
+&lt;!-- slow parameter in the &lt;limit name=&quot;slow&quot; current=&quot;30&quot;/&gt; will no be applied without enabling slow_queries --&gt; 
+&lt;slow_queries run=&quot;on|off&quot; log=&quot;/var/log/dbgovernor-kill.log&quot;/&gt; 
+&lt;!-- Enable or disable saving of statistics for lve-stats - On - enabled, Off-disabled --&gt;
+&lt;statistic mode=&quot;on|off&quot;&gt;&lt;/statistic&gt;
+&lt;!-- Enable logging user queries on restrict, can be On or Off --&gt;
+&lt;!-- Files are saved in /var/lve/dbgovernor-store and being kept here during 10 days --        &gt;
+&lt;logqueries use=&quot;on|off&quot;&gt;&lt;/logqueries&gt;
+&lt;default&gt;
+&lt;!-- -1 not use limit(by default, current - required) --&gt;
+&lt;limit name=&quot;cpu&quot; current=&quot;150&quot; short=&quot;100&quot; mid=&quot;90&quot; long=&quot;65&quot;/&gt;
+&lt;limit name=&quot;read&quot; current=&quot;100000000&quot; short=&quot;90000000&quot; mid=&quot;80000000&quot; long=&quot;70000000&quot;/&gt;
+&lt;limit name=&quot;write&quot; current=&quot;100000000&quot; short=&quot;90000000&quot; mid=&quot;80000000&quot; long=&quot;70000000&quot;/&gt;
+&lt;!-- Time to kill slow SELECT queries for account, can be different for accounts in seconds(but unit can be specified) --&gt;
+&lt;!-- enabled only when slow_queries run=&quot;on&quot; --&gt;
+&lt;!-- s -- seconds, m -- minutes, h -- hours, d -- days --&gt;
+&lt;limit name=&quot;slow&quot; current=&quot;30&quot;/&gt;
+&lt;/default&gt;
+&lt;!-- name will matched account name, as extracted via prefix extraction --&gt;
+ 
+&lt;!-- mysql_name will match exact MySQL user name. If both name and mysql_name are present, system will produce error --&gt;
+&lt;!-- mode restrict -- default mode, enforcing restrictions --&gt;
+&lt;!-- mode norestrict -- track usage, but don’t restrict user --&gt; 
+&lt;!-- mode ignore -- don’t track and don’t restrict user --&gt;
+&lt;user name=”xxx” mysql_name=”xxx” mode=”restrict|norestrict|ignore”&gt;
+&lt;limit...&gt;
+&lt;/user&gt;
+ 
+&lt;!-- debug mode for particular user. The information logged to restrict log. --&gt;
+&lt;debug_user name=&quot;xxx&quot;/&gt;
+ 
+&lt;/governor&gt;
+</code></pre></div><h2 id="starting-and-stopping"><a href="#starting-and-stopping" aria-hidden="true" class="header-anchor">#</a> Starting And Stopping</h2> <p>To start:</p> <div class="language- extra-class"><pre class="language-text"><code>$ service db_governor start
+</code></pre></div><p>To stop:</p> <div class="language- extra-class"><pre class="language-text"><code>$ service db_governor stop
+</code></pre></div><h2 id="mapping-a-user-to-database"><a href="#mapping-a-user-to-database" aria-hidden="true" class="header-anchor">#</a> Mapping a User to Database</h2> <p><strong>[</strong></p> <p>Traditionally used prefixes to map user to database. With the latest version, we automatically generate mapping for and control panels (other panels will follow).</p> <p>The mapping file is located in:</p> <p>The format of the file:</p> <div class="language- extra-class"><pre class="language-text"><code>[dbuser_name1] [account_name1] [UID1]
+...
+[dbuser_nameN] [account_nameN] [UIDN]
+</code></pre></div><p>For example:</p> <div class="language- extra-class"><pre class="language-text"><code>pupkinas_u2 pupkinas 502
+pupkinas_u1 pupkinas 502
+pupkinas_u3 pupkinas 502
+pupkin2a_uuu1 pupkin2a 505
+pupkin10_p10 pupkin10 513
+pupkin5a_u1 pupkin5a 508
+pupkin3a_qq1 pupkin3a 506
+pupkin3a_test22 pupkin3a 506
+pupkin3a_12 pupkin3a 506
+</code></pre></div><p>This would specify that db users: belong to user with uid (lve id)  502
+db user belongs to user with uid 505, etc...</p> <p>This file is checked for modifications every 5 minutes.</p> <p>If you need to force reload of that file, run:</p> <div class="language- extra-class"><pre class="language-text"><code>service db_governor restart
+</code></pre></div><h2 id="log-files"><a href="#log-files" aria-hidden="true" class="header-anchor">#</a> Log Files</h2> <p>error log is used to track any problems that might have</p> <p>Restrict log is located in</p> <p>Restrictions:</p> <div class="language- extra-class"><pre class="language-text"><code>_timestamp_ _username_ LIMIT_ENFORCED _limit_setting_ __current_value_                         _restrict_level__ SERVER_LOAD TRACKED_VALUES_DUMP 
+... 
+</code></pre></div><p>= load averages followed by output of
+is available with format
+is available with format</p> <h2 id="change-mysql-version"><a href="#change-mysql-version" aria-hidden="true" class="header-anchor">#</a> Change MySQL version</h2> <p>If you would like to change to a different MySQL version, or switch to you have to start by backing up existing databases.</p> <div class="language- extra-class"><pre class="language-text"><code>$ /usr/share/lve/dbgovernor/mysqlgovernor.py --mysql-version=MYSQL_VERSION
+$ /usr/share/lve/dbgovernor/mysqlgovernor.py --install
+</code></pre></div><ul><li>If you are using or -- recompile .</li></ul> <p>To install beta version of MySQL:</p> <div class="language- extra-class"><pre class="language-text"><code>$ /usr/share/lve/dbgovernor/mysqlgovernor.py --install-beta
+</code></pre></div><p>can be one of the following:</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td>default version of MySQL for given OS release (or cPanel settings)</td></tr> <tr><td></td> <td>MySQL v5.0</td></tr> <tr><td>mysql51</td> <td>MySQL v5.1</td></tr> <tr><td>mysql55</td> <td>MySQL v5.5</td></tr> <tr><td>mysql56</td> <td>MySQL v5.6</td></tr> <tr><td>mysql57</td> <td>MySQL v5.7</td></tr> <tr><td>mariadb55</td> <td>MariaDB v5.5</td></tr> <tr><td>mariadb100</td> <td>MariaDB v10.0</td></tr> <tr><td>mariadb101</td> <td>MariaDB v10.1</td></tr> <tr><td>mariadb102</td> <td>MariaDB v 10.2</td></tr> <tr><td>mariadb103</td> <td>MariaDB v 10.3</td></tr> <tr><td>percona56</td> <td>Percona v 5.6</td></tr></tbody></table> <ul><li>We don't recommend to downgrade from MySQL v5.6,</li></ul> <p>MySQL Governor starting from version 1.2-36 (for now, July 4th, 2018 in Beta) supports MariaDB 10.3 installation.</p> <h2 id="command-line-tools"><a href="#command-line-tools" aria-hidden="true" class="header-anchor">#</a> Command-line Tools</h2> <p>-- monitor MySQL usage on per user bases. More info...
+-- command line tool to manage
+-- provides historical information about usage and customer restrictions. <a href="/dbgov_lveinfo/">More info...</a>
+-- generate charts for MySQL usage. <a href="/mysql_governor_dbgovchart/">More info...</a></p> <h3 id="dbtop"><a href="#dbtop" aria-hidden="true" class="header-anchor">#</a> dbtop</h3> <p>Utility to monitor MySQL usage. Requires to be running. It shows usage for the current, mid and long intervals.</p> <p>show one time user list (no interactive mode)
+refresh interval for interactive mode (in seconds)</p> <p>toggle color mode and two-color mode</p> <ul><li>quit program
+sort table by username
+sort table by cpu column
+sort table by read column
+sort table by write column
+sort by restriction level
+sort by time before restrictions will be lifted.</li></ul> <p>Control keys, that sort table, displays into header of table bold and underlined symbol.
+Sorted field will be highlighted by *.
+field shows current stage, reason for restriction and number of seconds before restriction will be lifted:
+Values of column ' ' - cause of restriction or freezing:
+Possible stages: - - , 1 - Restriction 1, 2 - Restriction 2, 3 - Restriction 3, 4 -- restriction level 4</p> <p>(current value of parameter)
+(average value of 5 last values of parameter)
+(average value of 15 last values of parameter)
+(average value of 30 last values of parameter)
+and parameter which is cause of restriction</p> <ul><li><p>first level restricted account with short average restriction with 12 seconds left before re-enabled.</p></li> <li><p>number in %, shows usage by user
+· - number of bytes (kbytes, mbytes, gbytes) which user reads per second
+· - number of bytes (kbytes, mbytes, gbytes) write user reads per second</p></li></ul> <p>Accounts highlighted in color means that the account is restricted.
+Accounts highlighted in color are in cool down period</p> <p>Command line parameters of utility:
+refresh period in seconds ( )</p> <h3 id="dbctl"><a href="#dbctl" aria-hidden="true" class="header-anchor">#</a> dbctl</h3> <p>usage:</p> <p>set parameters for a
+list users &amp; their limits. It will list all users who had been active since restart,  as well as those for who explicit limits were set
+list restricted customers, with their limits, restriction reason, and time period they will still be restricted
+ignore particular user
+start observing particular user again
+remove limits for user/use defaults
+restrict user using lowest level (or if specified, using the specified level)
+unrestrict username (configuration file remains unchanged)
+unrestrict all restricted users (configuration file remains unchanged)
+show this message
+version number
+set mode of operation. Available values:</p> <ul><li>monitor only, don't throttle</li> <li>when user reaches the limit, put user's queries into LVE for that user (experimental)</li> <li>user's queries always run inside LVE for that user (experimental)</li> <li>single LVE for all abusers.</li> <li>same as (deprecated)</li></ul> <p>set default parameter
+set parameter for user</p> <p>limit (pct) usage
+limit (MB/s) usage
+limit (MB/s) usage
+level (1,2,3 or 4) specified (deprecated) - this option is available only for period mode:</p> <p>(see http://docs.cloudlinux.com/index.html?mysql_governor_configuration.html)</p> <p>The default mode is the &quot; &quot; - when a user hits limits, the account will be marked as restricted and if the user does not hit the limit again during &quot; &quot; account will be unrestricted. This mode doesn't have any additional levels/penalties.</p> <p>Changing the &quot;unlimit&quot; can be done only via the configuration file (see <a href="http://docs.cloudlinux.com/index.html?mysql_governor_configuration.html" target="_blank" rel="noopener noreferrer">http://docs.cloudlinux.com/index.html?mysql_governor_configuration.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ).
+limit time (in seconds) for long running queries</p> <p>Options for parameter :</p> <p>Examples:</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl set test2 --cpu=150,100,70,50 --read=2048,1500,1000,800
+</code></pre></div><p>sets individual limits for period) and periods) for user</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl set default --cpu=70,60,50,40
+</code></pre></div><p>changes default limits.</p> <p>All new limits will be applied immediately</p> <p>To unrestrict user:</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl unrestrict username
+</code></pre></div><p>To unrestrict all users:</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl unrestrict-all 
+</code></pre></div><p>To restrict user:</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl restrict dbgov
+</code></pre></div><p>To restrict user to level 2 restriction:</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl restrict dbgov --level=2
+</code></pre></div><p>To make to ignore user:</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl ignore username
+</code></pre></div><p>Delete user's limits, and use defaults instead:</p> <div class="language- extra-class"><pre class="language-text"><code>$ dbctl delete username
+</code></pre></div><p>Show limits as bytes:</p> <div class="language- extra-class"><pre class="language-text"><code>$dbctl list --bb
+</code></pre></div><h3 id="lveinfo-dbgov"><a href="#lveinfo-dbgov" aria-hidden="true" class="header-anchor">#</a> lveinfo --dbgov</h3> <p>tool is a part of package. It was extended to collect historical information about MySQL usage.</p> <div class="language- extra-class"><pre class="language-text"><code>Displays information about historical Db Governor usage
+Usage: lveinfo [OPTIONS]
+ 
+-h --help              : this help run report from date and time in YYYY-MM-DD HH:MM format if not present last 10 mscreen
+-v, --version          : version number
+-f, --from=            : inutes are assumed
+-t, --to=              : run report up to date and time in YYYY-MM-DD HH:MM format
+      if not present, reports results up to now
+    --period=          : time period
+      usage            : specify minutes with m,  h - hours, days with d, and values:
+                       : today, yesterday; 5m - last 5 minutes, 4h -- last four hours,
+                       : 2d - last 2 days, as well as today
+-o, --order-by=        : orders results by one of the following:
+      con              : average connections
+      cpu              : average CPU usage
+      read             : average READ usage
+      write            : average WRITE usage
+-u, --user=            : mysql username
+-l, --limit=           : max number of results to display, 10 by default
+-c, --csv              : display output in CSV format
+-b, --format           : show only specific fields into output
+      available values:
+      ts               : timestamp records
+      username         : user name
+      con              : average connections
+      cpu              : average CPU usage
+      read             : average READ usage
+      write            : average WRITE usage
+      lcpu             : CPU limit
+      lread            : READ limit
+      lwrite           : WRITE limit
+    --show-all         : full output (show all limits); brief output is default
+ 
+-o, --order-by=        : orders results by one of the following:
+      ts               : timestamp records
+      username         : user name
+      max_sim_req      : max simultaneous requests
+      sum_cpu          : average CPU usage
+      sum_write        : average WRITE usage
+      sum_read         : average READ usage
+      num_of_rest      : number of restricts
+      limit_cpu_end    : limit CPU on period end
+      limit_read_end   : limit READ on period end
+      limit_write_end  : limit WRITE on period end
+    --id=              : LVE id -- will display record only for that LVE id
+-u, --user=            : Use username instead of LVE id, and show only record for that
+                       : user
+-l, --limit=           : max number of results to display, 10 by default
+-c, --csv              : display output in CSV format
+-b, --by-usage         : show LVEs with usage (averaged or max) within 90% percent
+                       : of the limit
+      available values:
+      sum_cpu          : average CPU usage
+      sum_write        : average WRITE usage
+      sum_read         : average READ usage
+      num_of_rest      : number of restricts
+      limit_cpu_end    : limit CPU on period end
+      limit_read_end   : limit READ on period end
+      limit_write_end  : limit WRITE on period end
+    --show-all         : full output (show all limits); brief output is default
+ 
+TS                     : timestamp records
+USER                   : user name
+CPU                    : average CPU usage
+READ                   : average READ usage
+WRITE                  : average WRITE usage
+CON                    : average connections
+lCPU                   : CPU limit
+lREAD                  : READ limit
+lWRITE                 : WRITE limit
+RESTRICT               : C-cpu restrict, R- read restrict, W- write restrict
+</code></pre></div><p>Example:</p> <div class="language- extra-class"><pre class="language-text"><code>root@cpanel1 [~/ttttt]# lveinfo --dbgov --user=dbgov --period=1d --limit=10
+TS                   USER   CPU     READ    WRITE   CON     lCPU    lREAD   lWRITE   RESTRICT  
+2012-12-06 11:14:49  dbgov   9       0.0     0.0     1       90      1000    1000                
+2012-12-06 11:13:49  dbgov   9       0.0     0.0     1       90      1000    1000                
+2012-12-06 11:12:49  dbgov   9       0.0     0.0     1       90      1000    1000                
+2012-12-06 11:11:49  dbgov   9       0.0     0.0     1       90      1000    1000                
+2012-12-06 11:10:49  dbgov   9       0.0     0.0     1       90      1000    1000                
+2012-12-06 11:09:49  dbgov   90      0.0     0.0     1       90      1000    1000     C          
+2012-12-06 11:08:49  dbgov   0       0.0     0.0     0       400     1000    1000                
+2012-12-06 11:07:49  dbgov   0       0.0     0.0     0       400     1000    1000                
+2012-12-06 11:06:49  dbgov   0       0.0     0.0     0       400     1000    1000   
+</code></pre></div><h3 id="dbgovchart"><a href="#dbgovchart" aria-hidden="true" class="header-anchor">#</a> dbgovchart</h3> <p>is analog of tool to create charts representing customer's to MySQL usage</p> <p>Usage:</p> <p>Acceptable options are:</p> <div class="language- extra-class"><pre class="language-text"><code>--help      This help screen
+--version   Version number
+--from=     Run report from date and time in YYYY-MM-DD HH:MM format
+            if not present last 10 minutes are assumed
+--to=       Run report up to date and time in YYYY-MM-DD HH:MM format
+            if not present, reports results up to now
+--period=   Time period
+            specify minutes with m,  h - hours, days with d, and values:
+            today, yesterday
+            5m - last 5 minutes, 4h - last four hours, 2d - last 2 days,
+            as well as today
+--user=     mysql username
+--output=   Filename to save chart as, if not present, output will be sent to STDOUT
+--show-all  Show all graphs (by default shows graphs for which limits are set)
+</code></pre></div><p>Charts examples:
+<img src="/images/1111.png" alt> <img src="/images/1111_2.png" alt></p> <h2 id="backing-up-mysql"><a href="#backing-up-mysql" aria-hidden="true" class="header-anchor">#</a> Backing Up MySQL</h2> <p>On server disable MySQL service monitoring before doing the job:</p> <div class="language- extra-class"><pre class="language-text"><code>$ whmapi1 configureservice service=mysql enabled=1 monitored=0
+</code></pre></div><p>Execute as :</p> <div class="language- extra-class"><pre class="language-text"><code>$ mkdir -p ~/mysqlbkp
+$ service mysql restart --skip-networking --skip-grant-tables
+$ mysql_upgrade
+$ mysqldump --all-databases --routines --triggers &gt; ~/mysqlbkp/dbcopy.sql
+$ service mysql stop
+$ cp -r /var/lib/mysql/mysql ~/mysqlbkp/
+$ service mysql start
+</code></pre></div><p>On server enable monitoring back:</p> <div class="language- extra-class"><pre class="language-text"><code>$ whmapi1 configureservice service=mysql enabled=1 monitored=1
+</code></pre></div><h2 id="abrt"><a href="#abrt" aria-hidden="true" class="header-anchor">#</a> abrt</h2> <p>We have created a plugin for tool to automatically upload core dumps in case crashes.</p> <p>To install the plugin:</p> <div class="language- extra-class"><pre class="language-text"><code>$ yum install cl-abrt-plugin --enablerepo=cloudlinux-updates-testing
+</code></pre></div><p>It will monitor crash reports for</p> <p>You can modify to monitor other software as well by adding them to .</p> <div class="language- extra-class"><pre class="language-text"><code>AppLists=/usr/sbin/db_governor,/usr/sbin/dbtop,/usr/sbin/dbctl
+</code></pre></div><h2 id="troubleshooting"><a href="#troubleshooting" aria-hidden="true" class="header-anchor">#</a> Troubleshooting</h2> <p>and have only file for managing the service, but the file has functions, so it is supported by .</p> <p>For adding extra limits, do the following:</p> <ol><li>Run:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>mkdir /etc/systemd/system/mariadb.service.d/
+</code></pre></div><ol start="2"><li>Run:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>touch /etc/systemd/system/mariadb.service.d/limits.conf
+</code></pre></div><ol start="3"><li>Add the following content to the the file :</li></ol> <div class="language- extra-class"><pre class="language-text"><code>[Service] 
+LimitNOFILE=99999
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/cagefs/" class="prev">
+          CageFS
+        </a></span> <span class="next"><a href="/php_selector/">
+          PHP Selector
+        </a>
+        →
+      </span></p></div> </div> <div class="footer" data-v-ac83a848><div data-v-ac83a848><a href="https://cloudlinux.com" data-v-ac83a848><img src="/assets/img/we-are-cloudlinux.783ed390.svg" alt="We are Cloudlinux" data-v-ac83a848></a></div> <div data-v-ac83a848>2018. CloudLinux Inc</div> <div data-v-ac83a848><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>How to</a></div><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>Getting started</a></div><div data-v-ac83a848><a href="https://cloudlinux.zendesk.com/hc/en-us/requests/new" target="_blank" data-v-ac83a848>Contact support</a></div><div data-v-ac83a848><a href="https://www.cloudlinux.com/blog" target="_blank" data-v-ac83a848>Blog</a></div></div> <div class="social" data-v-ac83a848><span data-v-ac83a848>Stay in touch</span> <a href="https://www.facebook.com/cloudlinux/" target="_blank" data-v-ac83a848><img src="/fb.svg" data-v-ac83a848></a><a href="https://twitter.com/cloudlinuxos/" target="_blank" data-v-ac83a848><img src="/tw.svg" data-v-ac83a848></a><a href="https://linkedin.com/company/cloudlinux" target="_blank" data-v-ac83a848><img src="/in.svg" data-v-ac83a848></a><a href="https://www.youtube.com/channel/UCZ3YMHWnMP7TaxlXVay5-aw" target="_blank" data-v-ac83a848><img src="/ytube.svg" data-v-ac83a848></a></div></div> <!----></div></div>
+    <script src="/assets/js/app.0abf6f2a.js" defer></script><script src="/assets/js/22.c03a1b94.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>LVE-Stats 2 | Documentation</title>
+    <meta name="description" content="Kernelcare documentation">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.166b4f65.css" as="style"><link rel="preload" href="/assets/js/app.0abf6f2a.js" as="script"><link rel="preload" href="/assets/js/19.6a071eb7.js" as="script"><link rel="prefetch" href="/assets/js/10.637ec29d.js"><link rel="prefetch" href="/assets/js/11.5bc4e224.js"><link rel="prefetch" href="/assets/js/12.86ab74a0.js"><link rel="prefetch" href="/assets/js/13.57ab5c71.js"><link rel="prefetch" href="/assets/js/14.fd3e69ee.js"><link rel="prefetch" href="/assets/js/15.ae08bd81.js"><link rel="prefetch" href="/assets/js/16.c78fdb9f.js"><link rel="prefetch" href="/assets/js/17.1fdd51cc.js"><link rel="prefetch" href="/assets/js/18.2e9e3c46.js"><link rel="prefetch" href="/assets/js/20.03d7f633.js"><link rel="prefetch" href="/assets/js/21.c64caaaa.js"><link rel="prefetch" href="/assets/js/22.c03a1b94.js"><link rel="prefetch" href="/assets/js/23.a5cd9404.js"><link rel="prefetch" href="/assets/js/24.b90fb854.js"><link rel="prefetch" href="/assets/js/25.42c7c91b.js"><link rel="prefetch" href="/assets/js/26.159622d1.js"><link rel="prefetch" href="/assets/js/27.e8de38ef.js"><link rel="prefetch" href="/assets/js/28.ac2756db.js"><link rel="prefetch" href="/assets/js/3.5515951d.js"><link rel="prefetch" href="/assets/js/4.4d6450cb.js"><link rel="prefetch" href="/assets/js/5.90579adc.js"><link rel="prefetch" href="/assets/js/6.3f73b2ab.js"><link rel="prefetch" href="/assets/js/7.a073d98e.js"><link rel="prefetch" href="/assets/js/8.29039cd1.js"><link rel="prefetch" href="/assets/js/9.ef4b91a3.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.28e1d2e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.166b4f65.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Documentation" class="logo"> <span class="site-name can-hide">Documentation</span></a> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value="Search"> <!----></div> <div class="links" style="max-width:nullpx;"><a href="https://cloudlinux.com/trial" target="_blank" class="btn">
+      Try Free
+    </a> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Content</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/cloudlinux_installation/" class="sidebar-link">Installation</a></li><li><a href="/limits/" class="sidebar-link">Limits</a></li><li><a href="/lve_manager/" class="sidebar-link">LVE Manager</a></li><li><a href="/reseller_limits/" class="sidebar-link">Reseller Limits</a></li><li><a href="/lve-stats_2/" class="active sidebar-link">LVE-Stats 2</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lve-stats_2/#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#configuration" class="sidebar-link">Configuration</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lve-stats_2/#lve-stats2" class="sidebar-link">LVE Stats2</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#lve-stats-2-2" class="sidebar-link">LVE Stats 2</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#customize" class="sidebar-link">Customize</a></li></ul></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#command-line-tools" class="sidebar-link">Command-line Tools</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lve-stats_2/#lveinfo" class="sidebar-link">lveinfo</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#lvechart" class="sidebar-link">lvechart</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#dbgovchart" class="sidebar-link">dbgovchart</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#lve-read-snapshot" class="sidebar-link">lve-read-snapshot</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#lve-create-db" class="sidebar-link">lve-create-db</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#cloudlinux-top" class="sidebar-link">cloudlinux-top</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#cloudlinux-statistics" class="sidebar-link">cloudlinux-statistics</a></li></ul></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#plugins" class="sidebar-link">Plugins</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#creating-a-plugin-for" class="sidebar-link">Creating a Plugin for</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/lve-stats_2/#introduction" class="sidebar-link">Introduction</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#server-plugin-arrangement" class="sidebar-link">Server Plugin Arrangement</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#plugin-configuration" class="sidebar-link">Plugin Configuration</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#types-of-plugins" class="sidebar-link">Types of Plugins</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#examples-of-plugins" class="sidebar-link">Examples of Plugins</a></li></ul></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#file-info-and-format-for-var-lve-info-file" class="sidebar-link">File info and format for /var/lve/info file</a></li><li class="sidebar-sub-header"><a href="/lve-stats_2/#troubleshooting" class="sidebar-link">Troubleshooting</a></li></ul></li><li><a href="/cagefs/" class="sidebar-link">CageFS</a></li><li><a href="/mysql_governor/" class="sidebar-link">MySQL Governor</a></li><li><a href="/php_selector/" class="sidebar-link">PHP Selector</a></li><li><a href="/python_and_ruby_selector/" class="sidebar-link">Python</a></li><li><a href="/node_js_selector/" class="sidebar-link">Node.js Selector</a></li><li><a href="/inodes_limits/" class="sidebar-link">inodes</a></li><li><a href="/kernel_settings/" class="sidebar-link">Kernel Settings</a></li><li><a href="/apache_mod_lsapi/" class="sidebar-link">Apache mod_lsapi</a></li><li><a href="/cloudlinux-fchange/" class="sidebar-link">File Change API</a></li><li><a href="/mod_proctitle/" class="sidebar-link">mod_proctitle</a></li><li><a href="/additional_packages/" class="sidebar-link">Additional Packages</a></li><li><a href="/integration_guide/" class="sidebar-link">Integration Guide</a></li><li><a href="/partner_portal/" class="sidebar-link">Partner Portal</a></li><li><a href="/cloudlinux_network/" class="sidebar-link">CloudLinux Network</a></li><li><a href="/cloudlinux_whmcs_plugin/" class="sidebar-link">CloudLinux WHMCS Plugin</a></li><li><a href="/deprecated/" class="sidebar-link">Deprecated</a></li><li><a href="/hardware_compatibility/" class="sidebar-link">Hardware Compatibility</a></li><li><a href="/cloudlinux_life-cycle/" class="sidebar-link">CloudLinux Life cycle</a></li><li><a href="/downloading_documentation/" class="sidebar-link">Downloading Documentation</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="lve-stats-2"><a href="#lve-stats-2" aria-hidden="true" class="header-anchor">#</a> LVE-Stats 2</h1> <p>Old LVE-statistics store averages as integer numbers, as % of
+100%
+Old LVE-statistics does not provide a way to determine a cause of LVE faults, i.e. what processes are running when user hits LVE limits.
+Notifications in old LVE-statistics are not accurate because they are based on average values for
+Old LVE-statistics functionality is hard to extend.</p> <p>increased precision of statistics;
+usage is calculated  in terms of % of a single core (100% usage means one core);
+lvestats-server emulates and tracks faults for , , ;
+lvestats-server saves “snapshots” of user’s processes and queries for each “incident” - added new lve-read-snapshot utility;
+improved notifications about hitting LVE limits (more informative and without false positives);
+implemented ability to add custom plugins;
+MySQL and support;
+more pretty, scalable, interactive charts;
+snapshots include HTTP-requests.</p> <p>Notifications for control panels other than CPanel.
+Burstable Limits/server health: We are monitoring server health ( , , idle ) and automatically decreasing/increasing limits based on server health.
+: plugin would analyze usage per group of users (reseller’s usage), and do actions.
+Suspend/notify plugin: would detect that user is being throttled for 10 minutes, and suspend him (just because), or notify, or increase limits.</p> <h2 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h2> <p>To install please execute:</p> <div class="language- extra-class"><pre class="language-text"><code>yum install lve-stats
+</code></pre></div><p>To update:</p> <div class="language- extra-class"><pre class="language-text"><code>yum update lve-stats
+</code></pre></div><p>Settings of old (ver. 0.x) are imported automatically on the first install/update of new package.</p> <p>SQLite database file is located in , data from old lve-stats (ver. 0.x) are being migrated automatically in the background. Migrating process can last 2-8 hours (during this time lags are possible when admin is trying to check statistics, at the same time users will not be affected). Migrating the latest 30 days, stable migration is provided.</p> <p>Currently new supports all databases available in CloudLinux (except for CL5).</p> <p>If you have any problems after update, downgrade to the previous stable version by running:</p> <div class="language- extra-class"><pre class="language-text"><code>yum downgrade lve-stats
+</code></pre></div><p>and contact CloudLinux support at</p> <h2 id="configuration"><a href="#configuration" aria-hidden="true" class="header-anchor">#</a> Configuration</h2> <p>Main configuration file _ _ contains the following options:</p> <ul><li><p>selects appropriate database type to use;</p></li> <li><p>connection string for and MySQL database, has the following form:</p></li></ul> <p><code></code> <code></code></p> <p>Default port is used for specific database, if port is not specified (typical port is 3306 for MySQL and 5432 for ). Connection string is not used for sqlite database.</p> <ul><li>sets the name of the server (at most 10 characters). This option is to use with centralized database ( or MySQL). For use with sqlite database, value of this option should be &quot;localhost&quot; (without quotes).</li></ul> <p>– path to directory containing custom plugins for (default path ).</p> <ul><li><p>period of time to write data to database (in seconds); default value is 60 seconds.</p></li> <li><p>timeout for custom plugins (seconds). If plugin execution does not finish within this period, plugin is terminated. Default value is 5 seconds.</p></li></ul> <p><code></code> - duration of one cycle of (seconds). This should be less than total duration of execution of all plugins. Default value is 5 seconds. Increasing this parameter makes precision of statistics worse.</p> <ul><li>period of time (in days) to keep history in database. Old data is removed from database automatically. Default value is 60 days.</li></ul> <p>– sets compatibility output mode (compatibility with older lveinfo version).  Value “v1” (without quotes) enables compatibility with old version of . “v2” value enables “ ” output mode, but can break LVE plugins for control panels (statistics in , , etc). Support of v2 mode will be added to LVE plugins in the recent future. When mode parameter is absent, later version of is implied.</p> <ul><li>disable snapshots and incidents. Possible values: .</li></ul> <p>Configuration files for plugins are located in directory.</p> <p>contains the following options:</p> <ul><li><p>Minimal interval of time between incidents (in seconds). If minimal interval of time between LVE faults is greater than value specified, than new &quot;incident&quot; will begin and new snapshots will be saved. Default value is 300 seconds.</p></li> <li><p>Maximum number of snapshots saved per minute for specific LVE id (default is 2).</p></li> <li><p>Maximum number of snapshots saved for one &quot;incident&quot;. Default is 10.</p></li></ul> <p>contains the following options:</p> <p>– enables notification for admin  ( , default N);</p> <p>– enables notification for reseller ( , default N);</p> <ul><li>enables notification for customers  ( , default N);</li></ul> <p>– Y=notify all users, N=notify only hoster's users (whos reseller is root), default = N;</p> <p>– notify about faults when customer hits 100% of his limit ( , default N);</p> <ul><li><p>notify about faults when customer hits 100% of his limit ( , default N);</p></li> <li><p>notify about faults when customer hits 100% of his limit ( , default N);</p></li> <li><p>notify about memory faults ( , default N);</p></li></ul> <p>– notify about entry processes faults ( , default N);</p> <p>– notify about number of processes faults ( , default N);</p> <p>– minimum number of faults to notify admin (default 1);</p> <p>– minimum number of faults to notify customer (default 1);</p> <p>– period of time to notify admin (default 12h);</p> <p>– period of time to notify customer (default 12h);</p> <ul><li><p>sender email address. For example:</p></li> <li><p>email message subject.  For example:</p></li></ul> <p>Templates of notifications are located here:</p> <p><em>/usr/share/lve/emails/en_US/admin_notify.txt</em> <em>/usr/share/lve/emails/en_US/reseller_notify.txt</em> <em>/usr/share/lve/emails/en_US/user_notify.txt</em> <em>/usr/share/lve/emails/en_US/admin_notify.html</em> <em>/usr/share/lve/emails/en_US/reseller_notify.html</em></p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart
+</code></pre></div><ul><li>configuration file for</li></ul> <h3 id="lve-stats2"><a href="#lve-stats2" aria-hidden="true" class="header-anchor">#</a> LVE Stats2</h3> <p><strong>1. MySQL Server Setup</strong></p> <p>If MySQL Server is not installed, then install it according to control panel documentation.</p> <p>For non-panel system:</p> <p><em>(CloudLinux 6)</em></p> <div class="language- extra-class"><pre class="language-text"><code>yum install mysql mysql-server
+service mysqld start
+chkconfig mysqld on
+</code></pre></div><p><em>(CloudLinux 7)</em></p> <div class="language- extra-class"><pre class="language-text"><code>yum install mariadb mariadb-server
+systemctl start mariadb.service
+systemctl enable mariadb.service
+</code></pre></div><p><strong>2. Database Setup</strong></p> <ol><li><p>Run MySQL administrative utility: .</p></li> <li><p>In utility run the commands:</p></li></ol> <p>a.</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE DATABASE db_lvestats2;
+</code></pre></div><p>creating server DB. Also, check <strong><em>Note</em></strong> below.</p> <p>b.</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE USER 'lvestats2'@'localhost' IDENTIFIED BY 'lvestats2_passwd';
+</code></pre></div><p>creating a user for server to work under. Also, check <strong><em>Note</em></strong> below.</p> <p>c.</p> <div class="language- extra-class"><pre class="language-text"><code>GRANT ALL PRIVILEGES ON db_lvestats2.* TO 'lvestats2'@'localhost';
+</code></pre></div><p>granting all the privileges for all DB tables to the user. Use the username and DB name from points a. and b. above.</p> <p>d.</p> <div class="language- extra-class"><pre class="language-text"><code>FLUSH PRIVILEGES;
+</code></pre></div><p>refreshing privileges information.</p> <p>e. Exit administrative utility .</p> <p>**3. **</p> <p>Stop server running the command:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats stop
+</code></pre></div><p>In server configuration file <em>/etc/sysconfig/lvestats2</em> edit the following options:</p> <p><em>db_type = mysql</em> <em>connect_string = lvestats2:lvestats2_passwd@localhost/db_lvestats2</em></p> <p>Note that option value is used in format: . Username, password and DB name must be the same as in point 2.b. of Database Setup above.</p> <p>After making changes in configuration files run</p> <div class="language- extra-class"><pre class="language-text"><code>/usr/sbin/lve-create-db
+ 
+</code></pre></div><p>for DB primary initialization (creating tables, indexes, etc). There is no need to create anything in the DB manually.</p> <p>When done, restart server running:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart
+</code></pre></div><p><strong>4. Additional Security Settings</strong></p> <p>If you need to provide access to information utilities ( ) for different users, then we recommend creating one more DB user with read-only privilege to guarantee information security. It can be done by running the following commands in administrative utility:</p> <p>a.</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE USER 'lvestats2_read'@'localhost' IDENTIFIED BY 'lvestats2_read_passwd';
+</code></pre></div><p>creating a user (check <strong><em>Note</em></strong> above).</p> <p>b.</p> <div class="language- extra-class"><pre class="language-text"><code>GRANT SELECT ON db_lvestats2.* TO 'lvestats2_read'@'localhost';
+</code></pre></div><p>granting read-only privilege to the user.</p> <p>c.</p> <div class="language- extra-class"><pre class="language-text"><code>FLUSH PRIVILEGES;
+</code></pre></div><p>refreshing privileges information.</p> <p>If server is set correctly (see information below), the information utilities will work under this user.</p> <p>If you need to provide access to information utilities to other users, then in order to guarantee information security you should do the following:</p> <p>а) Assign permission 600 to the main configuration file ( <em>/etc/sysconfig/lvestats2</em> ), so that it could be read only by server and by utilities that run under root.</p> <p>b) Copy , assign permission 644 to the new file, so that it could be read by any user but could only be changed by root.</p> <p>с) In file, in the line _ _ , specify DB user with read-only permission, created above.</p> <p>These steps allow hiding main DB user username/password from other system users.</p> <p>If there is no need in such access differentiation, then _ _ file access permission should be 644, so that it could be read by all users and could be changed only by root.</p> <p><strong>5. Using Special Characters in Database Password</strong></p> <p>Since scheme is used in config option, then usage of special characters in user DB password is not allowed . To use special symbols in the password, it must be converted to <a href="https://en.wikipedia.org/wiki/Percent-encoding" target="_blank" rel="noopener noreferrer">escape-sequence<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> . You can convert a password to escape-sequence in a console as follows:</p> <div class="language- extra-class"><pre class="language-text"><code>echo -n '[You_P@$$]:' | perl -MURI::Escape -ne 'print uri_escape($_).&quot;\n&quot;'
+%5BYou_P%40%24%24%5D%3A
+</code></pre></div><p>Or replace the symbols manually:</p> <div class="language- extra-class"><pre class="language-text"><code> !    #    $    &amp;    '    (    )    *    +    ,    /    :    ;    =    ?    @   [    ]
+%21  %23  %24  %26  %27  %28  %29  %2A  %2B  %2C  %2F  %3A  %3B  %3D  %3F  %40  %5B %5D
+</code></pre></div><p>After that <em>сonnect_string</em> will look as follows:</p> <p><code>сonnect_string=lvestats2:%5BYou_P%40%24%24%5D%3A@localhost/db_lvestats2</code> <code></code></p> <h3 id="lve-stats-2-2"><a href="#lve-stats-2-2" aria-hidden="true" class="header-anchor">#</a> LVE Stats 2</h3> <p>_Note. Run all the commands below under _</p> <p>**1. **</p> <p>For control panels use proper documentation for installation on the links: <a href="https://documentation.cpanel.net/display/CKB/Install+or+Update+PostgreSQL+on+Your+cPanel+Server" target="_blank" rel="noopener noreferrer">сPanel<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> , <a href="https://kb.plesk.com/en/123729" target="_blank" rel="noopener noreferrer">Plesk<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> .</p> <p>For non-panel CloudLinux run the following commands:</p> <p><em>(CloudLinux 6)</em></p> <div class="language- extra-class"><pre class="language-text"><code>yum install postgresql-server postgresql
+service postgresql initdb
+service postgresql start
+chkconfig postgresql on
+</code></pre></div><p><em>(CloudLinux 7)</em></p> <div class="language- extra-class"><pre class="language-text"><code>yum install postgresql-server postgresql
+postgresql-setup initdb
+systemctl start postgresql
+systemctl enable postgresql
+</code></pre></div><ol><li>In file change user authentication mode. Add the following lines (place before all other authentication parameters):</li></ol> <div class="language- extra-class"><pre class="language-text"><code># IPv4 local connections for lve-stats-2.x
+host dblvestat all 127.0.0.1/32 password
+# IPv6 local connections for lve-stats-2.x
+host dblvestat all ::1/128 password
+ 
+</code></pre></div><p>These lines enable user authentication by the password for connections. You can set other modes if needed.</p> <ol start="3"><li>Apply config changes by running:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>service postgresql restart
+</code></pre></div><p>**2. DB for **</p> <ol><li>Run standard administrative utility:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>sudo -u postgres psql postgres
+ 
+</code></pre></div><p>( for сPanel).</p> <ol start="2"><li>In utility run:</li></ol> <p>a.</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE DATABASE dblvestat;
+</code></pre></div><p>creating server DB. Also, check <strong><em>Note</em></strong> below.</p> <p>b.</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE USER lvestat WITH password 'passw';
+</code></pre></div><p>creating a user for server to work under. Also, check <strong><em>Note</em></strong> below.</p> <p>c.</p> <div class="language- extra-class"><pre class="language-text"><code>GRANT ALL privileges ON DATABASE dblvestat TO lvestat;
+</code></pre></div><p>granting user all privileges for work with .</p> <p>d. utility. (Alternatively ).</p> <p>**3. **</p> <p>Stop server by running:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats stop
+</code></pre></div><p>In server config file _ _ edit options for connecting to DB:</p> <div class="language- extra-class"><pre class="language-text"><code>db_type = postgresql
+connect_string=lvestat:passw@localhost/dblvestat
+If DB is going to be used as centralized for multiple hosts then collect_usernames parameter must be changed:
+collect_usernames=true
+</code></pre></div><p>Note that option value is of the format: . Username, password and DB name must be the same as in Database Setup section above.</p> <p>After making changes in configuration files, for DB primary initialization (creating tables, indexes, etc) run:</p> <div class="language- extra-class"><pre class="language-text"><code>/usr/sbin/lve-create-db 
+</code></pre></div><p>There is no need to create anything in the DB manually. When done, restart server by running:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart
+</code></pre></div><p><strong>4. Additional Security Settings</strong></p> <p>If you need to provide access to information utilities ( ) for other users (or if is disabled), then in order to guarantee DB security the following steps are required:</p> <p>a. Create a DB user with read-only permission:</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE USER lvestat_read WITH password 'passw';
+GRANT CONNECT ON DATABASE dblvestat to lvestat_read;
+\connect dblvestat;
+GRANT SELECT ON lve_stats2_history, lve_stats2_history_gov, lve_stats2_history_x60, lve_stats2_incident, lve_stats2_servers, lve_stats2_snapshot, lve_stats2_user TO lvestat_read;
+</code></pre></div><p>b. Assign root ownership and permission 600 to the main configuration file ( ), so that it could be read only by server and by utilities that run under root.</p> <p>c. Copy , assign permission 644 to the new file, so that it could be read by any user but could be changed only by root.</p> <p>d. In file, in the line <em>connect_string</em> , specify DB user with read-only permission, created above.</p> <p>These steps allow hiding main DB user username/password from other system users.</p> <p>If there is no need in such access differentiation, then file access permission should be 644, so that it could be read by all users and could be changed only by .</p> <p>When done restart server by running:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart
+</code></pre></div><p><strong>5. Using Special Characters in Database Password</strong></p> <p>Since scheme is used in config option, then usage of special characters in user DB password is not allowed . To use special symbols in the password, it must be converted to <a href="https://en.wikipedia.org/wiki/Percent-encoding" target="_blank" rel="noopener noreferrer">escape-sequence<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> . You can convert a password to escape-sequence in a console as follows:</p> <div class="language- extra-class"><pre class="language-text"><code>echo -n '[You_P@$$]:' | perl -MURI::Escape -ne 'print uri_escape($_).&quot;\n&quot;'
+%5BYou_P%40%24%24%5D%3A
+</code></pre></div><p>Or replace the symbols manually:</p> <div class="language- extra-class"><pre class="language-text"><code>!    #    $    &amp;    '    (    )    *    +    ,    /    :    ;    =    ?    @    [    ]
+%21  %23  %24  %26  %27  %28  %29  %2A  %2B  %2C  %2F  %3A  %3B  %3D  %3F  %40  %5B  %5D
+</code></pre></div><p>After that <em>сonnect_string</em> will look as follows:</p> <p><code>сonnect_string=lvestats2:%5BYou_P%40%24%24%5D%3A@localhost/db_lvestats2</code></p> <h3 id="customize"><a href="#customize" aria-hidden="true" class="header-anchor">#</a> Customize</h3> <p>is used as a template engine for the notifications.</p> <p>The templates for notifications are located in <code></code> , where - is the directory with localization name (language codes are formed according to and ). By default the templates for English are set: <code></code> .</p> <p>contains the following templates:</p> <p>for administrator;
+<code></code> for reseller;
+<code></code> for user.</p> <p>The notification is formed as _ _ . The plain text is taken from the files, html version - from the template. In case when only one template is present ( or ) the notification is sent as a type notification. It is better to use type notifications because when a mail client can not display an html-format message, then it will be displayed as plain text version.</p> <p>To localize notifications copy standard templates into directory with the proper locale name and translate the template. Also you can customize the main template making proper changes into it.</p> <p>The list of variables that can be used in the template:</p> <table><thead><tr><th></th> <th></th> <th></th></tr></thead> <tbody><tr><td>Variable</td> <td>Example</td> <td>Description</td></tr> <tr><td></td> <td></td> <td>Notification receiver user name. Taken from profile in the control panel, by default - for user, for administrator, for reseller.</td></tr> <tr><td></td> <td></td> <td>Notification receiver email address.</td></tr> <tr><td></td> <td></td> <td>Main domain. Available only for user.</td></tr> <tr><td></td> <td></td> <td>Locale in which the notification is sent. Available only for user.</td></tr> <tr><td></td> <td></td> <td>User reseller. Available only for user.</td></tr> <tr><td></td> <td></td> <td>Verification and notification sending period.</td></tr> <tr><td></td> <td></td> <td>User login in the system.</td></tr> <tr><td></td> <td>500</td> <td>User ID in the system.</td></tr> <tr><td></td> <td></td> <td>See description in output. Available only for users</td></tr> <tr><td></td> <td></td> <td>html table with the list of users that exceeded limits. Available for administrator and reseller.</td></tr> <tr><td></td> <td></td> <td>ascii - table with the list of users that exceeded limits. Available only for admins and resellers.</td></tr></tbody></table> <p>Sender’s email address by default is administrator email address from control panel settings if there is no email in the control panel).</p> <p>It can be changed with option in the config</p> <p>For example:</p> <p>To apply changes restart service:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart
+</code></pre></div><p>for CloudLinux 7</p> <div class="language- extra-class"><pre class="language-text"><code>systemctl restart lvestats.service
+</code></pre></div><p>Default subject is “ ”.  It can be changed for each template (and for localized templates as well). To change subject, in the very beginning of the file (no blank lines allowed in the beginning of the template) add the field , leave two blank lines after it and add template body.</p> <p>Customized subjects can be taken only from the templates with the resolution . Changes apply without restart.</p> <p>For backward compatibility the subject can be also changed with the key <code></code> in the config</p> <p>Customized subjects have higher priority than the key</p> <p>Example for the file</p> <div class="language- extra-class"><pre class="language-text"><code>Subject: Customized subject example
+Dear {{TONAME}},
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code> 
+Your {{DOMAIN}} web hosting account exceeded one or more of its resources within the last {{PERIOD}}.
+{% if epf %}Exceeded the maximum of {{lep}} concurrent website connections. Your website was not available {{epf}} times because of this problem.
+{% endif %}{% if pmemf %}Exceeded the physical memory limit of {{lpmem}}KB. Your website was not available {{pmemf}} times because of this problem.
+{% endif %}{% if vmemf %}Exceeded the virtual memory limit of {{lvmem}}KB. Your website was not available {{vmemf}} times because of this problem.
+{% endif %}{% if nprocf %}Exceeded the number of processes limit of {{lnproc}}. Your website was not available {{nprocf}} times because of this problem.
+{% endif %}{% if cpuf %}You reached limit of {{lcpu}} of total server CPU usage {{cpuf}} times. Your website was forced to load slower to reduce its CPU usage.
+{% endif %}{% if iof %}You reached limit of {{lio}}KB/s disk io rate {{iof}} times. The disk io speed for your account was slowed as a result of this problem.
+{% endif %}{% if iopsf %}You reached limit of {{liops}} I/O operations {{iopsf}} times. The disk io speed for your account was slowed as a result of this problem.
+{% endif %}
+ 
+To view full details about your web hosting account's resource usage, including the time of each incident listed above, please click the link below and log into your cpanel hosting control panel, then click the &quot;Resource Usage&quot; link under the &quot;Logs and Statistics&quot; section.
+
+ 
+If your account is regularly exceeding it's available resources, please consider upgrading to a higher level hosting plan that includes more resources. If you have any questions or need help with anything, just reply to this email and let us know.
+ 
+Sincerely,
+ 
+Your Friendly Web Hosting Support Team
+</code></pre></div><h2 id="command-line-tools"><a href="#command-line-tools" aria-hidden="true" class="header-anchor">#</a> Command-line Tools</h2> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <h3 id="lveinfo"><a href="#lveinfo" aria-hidden="true" class="header-anchor">#</a> lveinfo</h3> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>-</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>-</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>-</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>--</td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td>-</td> <td>-</td></tr> <tr><td></td> <td></td></tr></tbody></table> <h3 id="lvechart"><a href="#lvechart" aria-hidden="true" class="header-anchor">#</a> lvechart</h3> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <h3 id="dbgovchart"><a href="#dbgovchart" aria-hidden="true" class="header-anchor">#</a> dbgovchart</h3> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <h3 id="lve-read-snapshot"><a href="#lve-read-snapshot" aria-hidden="true" class="header-anchor">#</a> lve-read-snapshot</h3> <h3 id="lve-create-db"><a href="#lve-create-db" aria-hidden="true" class="header-anchor">#</a> lve-create-db</h3> <h3 id="cloudlinux-top"><a href="#cloudlinux-top" aria-hidden="true" class="header-anchor">#</a> cloudlinux-top</h3> <p><a href="/cloudlinux_top.html#usage/">Usage</a> <a href="/cloudlinux_top.html#output_format/">Output format</a> <a href="/cloudlinux_top.html#units_of_measurement/">Units of measurement</a> <a href="/cloudlinux_top.html#errors_handling/">Errors handling</a> <a href="/cloudlinux_top.html#examples/">Examples</a></p> <p>Utility provides information about current MySQL and LVE usage of a running system in JSON format.</p> <p>Optional arguments.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <div class="language- extra-class"><pre class="language-text"><code>{
+   &quot;mySqlGov&quot;: &quot;enabled&quot;,              # possible values: enabled, error
+   &quot;mySqlGovMode&quot;: &quot;abusers&quot;,          # see “
+                                       # if MySQL Governor is not enabled, value is &quot;none&quot;
+ 
+   &quot;resellers&quot;: [                      # list of resellers (available only with
+                                       # 
+       {
+           &quot;id&quot;: 1000020005,           # internal record id
+           &quot;limit&quot;: &lt;lve_section&gt;,     # current limits (last 5 seconds)
+           &quot;name&quot;: &quot;reseller_name&quot;,    # reseller’s login in control panel
+           &quot;usage&quot;: &lt;lve_section&gt;      # current usage (last 5 seconds)
+       }
+   ],
+   &quot;result&quot;: &quot;success&quot;,                # see the ‘
+   &quot;timestamp&quot;: 1522858537.337549,
+   &quot;users&quot;: [
+       {
+           &quot;domain&quot;: &quot;domain.com&quot;,     # user’s primary domain (from control panel)
+           &quot;id&quot;: 20005,                # lve_id, same as user id in /etc/passwd file
+           &quot;limit&quot;: &lt;lve_section&gt;,     # limits for last 5 seconds
+           &quot;reseller&quot;: &quot;reseler1&quot;,     # user’s reseller (from control panel)
+           &quot;usage&quot;: &lt;lve_section&gt;,     # usage for last 5 seconds
+           &quot;username&quot;: &quot;user&quot;          # username from /etc/passwd file or “N/A” if user
+                                       # with such id does not exist
+        }
+    ]
+}
+</code></pre></div><p>The structure* of :</p> <div class="language- extra-class"><pre class="language-text"><code>{
+&quot;cpu&quot;: {
+  &quot;all&quot;: 50.0,      # CPU usage or limit (LVE only)
+  &quot;mysql&quot;: 0.0*     # CPU usage or limit (MySQL Governor only)
+},
+&quot;ep&quot;: 1.0,           # number of entry processes
+&quot;io&quot;: {
+  &quot;all&quot;: 0.0,       # IO usage or limit (LVE only)
+  &quot;mysql&quot;: 0.0**     # IO usage or limit (MySQL Governor only)
+},
+&quot;iops&quot;: 0.0,         # IO operations per second
+&quot;mem&quot;: 258048,       # memory usage or limit
+&quot;pno&quot;: 1.0           # number of processes
+}
+</code></pre></div><ul><li>you can modify this structure using option, see <a href="/cloudlinux_top.html#examples/">usage examples</a> for details.
+** mysql values are only present when statistics is available and options is not used.</li></ul> <p>For and sections we use the following units of measurement.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td><strong>Value</strong></td> <td><strong>Units of measurement</strong></td></tr> <tr><td></td> <td>percentage of one core</td></tr> <tr><td></td> <td>bytes per second</td></tr> <tr><td></td> <td>number of operations per second</td></tr> <tr><td></td> <td>bytes</td></tr> <tr><td></td> <td>number of entry processes</td></tr> <tr><td></td> <td>number of processes</td></tr></tbody></table> <p>The format of the error message is the same as in the other utilities. When everything is ok, the value is . Otherwise, it contains error message <code>.</code> In case of unexpected errors, the output will be as follows.</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-top --json 
+{
+   &quot;context&quot;: {
+       &quot;error_text&quot;: &quot;Very bad error&quot;
+   },
+   &quot;result&quot;: &quot;An error occured: \&quot;%(error_text)s\&quot;&quot;,
+   &quot;timestamp&quot;: 1523871939.639394
+}
+</code></pre></div><p>get 100 users ordered by usage</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-top --json --order-by cpu --max=100
+</code></pre></div><p>get information about one user</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-top --json -u username
+</code></pre></div><p>get information about reseller and his users</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-top --json --for-reseller=reseller_name
+</code></pre></div><p>show only limits and usage</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-top --json --show=io
+</code></pre></div><h3 id="cloudlinux-statistics"><a href="#cloudlinux-statistics" aria-hidden="true" class="header-anchor">#</a> cloudlinux-statistics</h3> <p><a href="/cloudlinux-statistics.html#usage/">Usage</a> <a href="/cloudlinux-statistics.html#output_format/">Output format</a> <a href="/cloudlinux-statistics.html#units_of_measurement/">Units of measurement</a> <a href="/cloudlinux-statistics.html#errors_handling/">Errors handling</a> <a href="/cloudlinux-statistics.html#examples/">Examples</a></p> <p>cloudlinux-statistics is a utility that provides historical information about resource usage.</p> <p>Optional arguments.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <p><code></code>
+Filter items by resource usage.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <p>Filter items by the number of faults.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <p><code></code>
+Filter items by a time interval.</p> <p>Allows to get information for the given period of time; you can either set and options, or just get information for the recent time period using
+and values are ignored when is set.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <p>Get detailed statistics.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <p><code></code></p> <p><strong>Summary statistics</strong></p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json
+{
+  &quot;resellers&quot;: [
+    {
+      &quot;usage&quot;: &lt;lve_section&gt;,
+      &quot;faults&quot;: &lt;lve_section&gt;,
+      &quot;name&quot;: &quot;reseller&quot;,
+      &quot;limits&quot;: &lt;lve_section&gt;,
+      &quot;id&quot;: 1000020005
+    }
+  ],
+  &quot;timestamp&quot;: 1522920637,
+  &quot;mySqlGov&quot;: &quot;enabled&quot;,            # possible values: ”enabled”, “error”
+  &quot;result&quot;: &quot;success&quot;,
+  &quot;users&quot;: [
+    {
+      &quot;username&quot;: &quot;username&quot;,
+      &quot;domain&quot;: &quot;example.com&quot;,
+      &quot;reseller&quot;: &quot;reseller&quot;,
+      &quot;limits&quot;: &lt;lve_section&gt;,
+      &quot;faults&quot;: &lt;lve_section&gt;,
+      &quot;usage&quot;: &lt;lve_section&gt;,
+      &quot;id&quot;: 20005
+    }
+  ]
+}
+</code></pre></div><p><strong>Detailed statistics</strong></p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json --id=20001
+{
+  &quot;timestamp&quot;: 1523011550,
+  &quot;mySqlGov&quot;: &quot;enabled&quot;,           # possible values: ”enabled”, “error”
+  &quot;result&quot;: &quot;success&quot;,
+  &quot;user&quot;: [
+    {
+      &quot;usage&quot;: &lt;lve_section&gt;,
+      &quot;faults&quot;: &lt;lve_section&gt;,
+      &quot;from&quot;: 1523011144,
+      &quot;limits&quot;: &lt;lve_section&gt;,
+      &quot;to&quot;: 1523011143
+    },
+...
+    {
+      &quot;usage&quot;: &lt;lve_section&gt;,
+      &quot;faults&quot;: &lt;lve_section&gt;,
+      &quot;from&quot;: 1523011204,
+      &quot;limits&quot;: &lt;lve_section&gt;,
+      &quot;to&quot;: 1523011203
+    }
+  ]
+}
+</code></pre></div><p>For both, <strong>summary statistics</strong> and <strong>detailed statistics</strong> , is the same and looks like following*.</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;ep&quot;: {
+      &quot;lve&quot;: 1        # number of entry processes
+    },
+    &quot;vmem&quot;: {
+      &quot;lve&quot;: 2428928  # virtual memory usage or limit (deprecated)
+    },
+    &quot;iops&quot;: {
+      &quot;lve&quot;: 0        # io operations per second
+    },
+    &quot;io&quot;: {
+      &quot;lve&quot;: 0.0,     # io usage or limit (lve only)
+      &quot;mysql&quot;: 0.0**   # io usage or limit (mysql only)
+    },
+    &quot;nproc&quot;: {
+      &quot;lve&quot;: 1        # number of processes in lve
+    },
+    &quot;cpu&quot;: {
+      &quot;lve&quot;: 25.6,    # cpu usage (lve only)
+      &quot;mysql&quot;: 0.0*   # cpu usage (mysql governor only)
+    },
+    &quot;pmem&quot;: {
+      &quot;lve&quot;: 360448   # physical memory usage or limit
+    }
+}
+</code></pre></div><ul><li>you can specify only required fields using option;
+** fields are only available with installed.</li></ul> <p>For and sections we use the following units of measurement.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td><strong>Value</strong></td> <td><strong>Units of measurement</strong></td></tr> <tr><td></td> <td>percentage of one core</td></tr> <tr><td></td> <td>bytes per second</td></tr> <tr><td></td> <td>number of operations per second</td></tr> <tr><td>and</td> <td>bytes</td></tr> <tr><td></td> <td>number of entry processes</td></tr> <tr><td></td> <td>number of processes in LVE</td></tr></tbody></table> <p>The format of the error message is the same as in the other utilities. When everything is ok, the value is . Otherwise, it contains error message <code>.</code></p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json 
+{
+   &quot;context&quot;: {
+       &quot;error_text&quot;: &quot;Very bad error&quot;
+   },
+   &quot;result&quot;: &quot;An error occured: \&quot;%(error_text)s\&quot;&quot;,
+   &quot;timestamp&quot;: 1523871939.639394
+}
+</code></pre></div><p>get top 10 users ordered by usage for today</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json --order-by=cpu --period=today --limit=10
+</code></pre></div><p>get users that hit limit more than 10 times for today</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json --period=today --by-fault=io --threshold=10
+</code></pre></div><p>get users that used more than 80% of in last 24 hours</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json --by-usage=cpu --percentage=80 --period=24h
+</code></pre></div><p>get information only about reseller and his users</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json --for-reseller=reseller_name
+</code></pre></div><p>get information only about and usage</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-statistics --json --show=cpu,io
+</code></pre></div><h2 id="plugins"><a href="#plugins" aria-hidden="true" class="header-anchor">#</a> Plugins</h2> <p>LVE comes with a set of generic plugins:</p> <table><thead><tr><th></th> <th></th> <th></th> <th></th> <th></th></tr></thead> <tbody><tr><td>Plugin Name</td> <td>Order</td> <td>Default</td> <td>Period (seconds)</td> <td>Description</td></tr> <tr><td>LVECollector</td> <td>1000</td> <td>Y</td> <td>5</td> <td>Collects usage/limits data from /proc/lve/list</td></tr> <tr><td>CPUInfoCollector</td> <td>2000</td> <td>Y</td> <td>5</td> <td>collents info about</td></tr> <tr><td>LVEUsernamesCollector</td> <td>3000</td> <td>Y</td> <td>3600</td> <td>collects usernames &amp; user ids to match later on</td></tr> <tr><td>LVEUsageAnalyzer</td> <td>4000</td> <td>Y</td> <td>5</td> <td>analyzes usage of LVE</td></tr> <tr><td>LveUsageAggregator</td> <td>5000</td> <td>Y</td> <td>60</td> <td>aggregates data by time periods</td></tr> <tr><td>DBGovSaver</td> <td>6000</td> <td>Y</td> <td>5</td> <td>Saves data about database governor</td></tr> <tr><td>FileSaver</td> <td>7000</td> <td>Y</td> <td>5</td> <td>Saves LVE data into /var/lve/info</td></tr> <tr><td>CloudLinuxTopFileSaver</td> <td>8000</td> <td>Y</td> <td>60</td> <td>saves data used by to /var/lve/cloudlinux-top.json</td></tr> <tr><td>DBSaver</td> <td>9000</td> <td>Y</td> <td>60</td> <td>save LVE data to dabase</td></tr> <tr><td>DbUsernamesSaver</td> <td>10000</td> <td>Y</td> <td>3600</td> <td>saves users name to database</td></tr> <tr><td>DBSaverX60</td> <td>11000</td> <td>Y</td> <td>3600</td> <td>saves aggregated hourly data into database</td></tr> <tr><td>SnapshotSaver</td> <td>12000</td> <td>Y</td> <td>30</td> <td>collects &amp; saves snapshots data</td></tr> <tr><td>StatsNotifier</td> <td>13000</td> <td>Y</td> <td>varied</td> <td>notify user/admin based on usage</td></tr> <tr><td>HistoryCleaner</td> <td>14000</td> <td>Y</td> <td>3600</td> <td>removes old usage</td></tr> <tr><td>ResMEMCollector</td> <td>1500</td> <td>N</td> <td>30</td> <td>collects physical memory usage from processes RES field instead of /proc/lve/list</td></tr> <tr><td>LVEDestroyer</td> <td>-</td> <td>N</td> <td>5</td> <td>destroys LVEs that weren't active for X iterations. Number of iterations is passed from config using iterations variable. means plugin disabled</td></tr></tbody></table> <p>To enable non-default plugin, copy or link it to _ /usr/share/lve-stats/plugins_ directory.</p> <p>For example to enable _ ResMEMCollector_ plugin, do:</p> <div class="language- extra-class"><pre class="language-text"><code>ln -s /usr/share/lve-stats/plugins.other/res_mem_collector.py /usr/share/lve-stats/plugins/
+service lvestats restart
+</code></pre></div><h2 id="creating-a-plugin-for"><a href="#creating-a-plugin-for" aria-hidden="true" class="header-anchor">#</a> Creating a Plugin for</h2> <p><a href="/lve-stats_2_plugin_introduction/">Introduction</a></p> <p><a href="/server_plugin_arrangement/">Server Plugin Arrangement</a></p> <p><a href="/plugin_configuration/">Plugin Configuration</a></p> <p><a href="/types_of_plugins/">Types of Plugins</a></p> <h3 id="introduction"><a href="#introduction" aria-hidden="true" class="header-anchor">#</a> Introduction</h3> <p>complex has scalable architecture, which allows to connect custom plugins.</p> <p>server searches for plugins in the directory which is specified with plugins parameter of server’s /etc/sysconfig/lvestats2 configuration file. Default directory is _ _ /usr/share/lve-stats/plugins.</p> <p>Each plugin must be of a class, must be written in language and its file must have extension. Files with all other extensions will be ignored. For normal server work access permission 400 is enough; owner – .</p> <p>Plugins' classes can be of the same name, but better not, because classes' names can affect the set of parameters in <em>set_config</em> method. You can find detailed plugins' configuring information below, in appropriate chapter.</p> <p>Plugin's class must contain method, which is invoked by the server every 5 seconds (by default, can be changed by interval parameter of configuration file).
+Also method (configuration settings) can be available. You can find more info in chapter.</p> <p>Additionally the following attributes can be set (plugin class instance variable):</p> <ul><li>defines plugin's position in the server's plugin list, (more info in ).
+or ) – the longest allowable duration of one launch of the plugin (execute method). Default value of parameter is 5 seconds.
+– sets the interval between two launches of execute plugin method in seconds. If not defined, then plugin runs every 5 seconds ( parameter in configuration file).</li></ul> <p>When method of the plugin is invoked, the server creates an attribute in it, where launch time is recorded. This value is equal to what a standard Python function <em>time.time()</em> returns. All the plugins launched one after another receive the same  value of attribute from the server. is overwritten before method is invoked.</p> <p>The previous value of now attribute is not saved by the server. If plugin needs it, it has to save it by itself.</p> <p>Plugin's class can be inherited from class, which is the part of the server itself. This is not obligatory, but inheritance can help to avoid different errors in servers work, particularly if a plugin doesn't contain required execute method.</p> <p>class is defined in the file: <em>/opt/alt/python27/lib/python2.7/site-packages/lvestats/core/plugin.py</em> .</p> <h3 id="server-plugin-arrangement"><a href="#server-plugin-arrangement" aria-hidden="true" class="header-anchor">#</a> Server Plugin Arrangement</h3> <p>When the server starts, it performs the search of plugins in the directory specified in /etc/sysconfig/lvestats2 configuration file. This directory is scanned only when the server starts, therefore if any plugin was added into the directory, the server has to be restarted with the following command:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart.
+</code></pre></div><p>After successful restart the plugins are graded and executed  ascending by attribute. If any plugin's attribute is not set, it is considered as a Python language constant <em>sys.maxint</em> (which is usually 9223372036854775807). This in fact means that such plugins will be executed in the last.
+If any plugins has similar meanings, their execution order is unpredictable.</p> <p>The server invokes method of all plugins one after another.</p> <p>When the server invokes method of any plugin, it transmits a data dictionary ( <em>lve_data</em> argument) into plugin. The dictionary is common for all the plugins. Any plugin can read, write and change any data in this dictionary. server doesn't control this area. That is why one must be careful while developing new plugins, in order not to change or corrupt other plugins' data which can break their functionality.</p> <p>If an exception occurs in method, its text and python stack trace is recorded into server log /var/log/lve-stats and all the changes made to <em>lve_data</em> dictionary before the exception happened are lost.</p> <p>The keys of the <em>lve_data</em> dictionary are recommended to look like , in order the plugins do not corrupt other data accidentally.</p> <p>Server contains some standard plugins which define and use the following keys in the common dictionary lve_data: and . User plugins can use data from these keys, but it is recommended not to change them if there is no special need, because it can break the next plugins in the execution queue.</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td>Key</td> <td>Content</td></tr> <tr><td></td> <td>LVE version. The same as console command</td></tr> <tr><td></td> <td>Dictionary, that contains lve id’s as keys and LVEStat class objects as values. Every LVEStat object contains values of usages and limits taken from     /proc/lve/list file for every . Dictionary keys – , including 0 for “ ” LVE. This dictionary is updated on each iteration of lvestats-server (every 5 seconds by default). LVEStat – is a standard server class, it can be imported with the command from <em>lvestats.core.lvestat</em>  The class is described in the file /opt/alt/python27/lib/python2.7/site-packages/lvestats/core/lvestat.py. Here you can find the whole list of data fields and their functions.</td></tr> <tr><td></td> <td><em>stats</em> content from the previous iteration. Before the first iteration – empty dictionary.</td></tr> <tr><td></td> <td>When LVE_VERSION is 4, real frequency in multiplied by number of cores. When LVE_VERSION &gt; 4, speed is in conventional units and equals to 1000000000 * cores (1 per core).</td></tr> <tr><td></td> <td>Quantity of /cores.</td></tr> <tr><td></td> <td>Contains accumulated LVE statistics for each 5-seconds interval in current minute. Cleared each minute.</td></tr> <tr><td></td> <td>Contains aggregated LVE Statistics for “previous” minute to store to database. Overwritten each minute.</td></tr></tbody></table> <p>Each plugin’s instance lifetime is from the moment it was loaded till the server stops working. But if method working time exceeds timeout, the plugin will be terminated and restarted in the next iteration. All changes to the <em>lve_data</em> dictionary will be lost.</p> <p>During servers graceful shutdown (restart, server shutdown, commands ), each plugin receives SIGTERM signal.
+This is useful to correctly unload the plugin (terminate all subsidiary processes, save data to files etc.). If a plugin doesn't need to “finalize” its execution before termination, then there's no need to implement this signal handler. Below you can see an example of such handler.</p> <h3 id="plugin-configuration"><a href="#plugin-configuration" aria-hidden="true" class="header-anchor">#</a> Plugin Configuration</h3> <p>Server allows to configure each plugin separately.</p> <p>On initialization stage the server invokes method of the plugin and locates there a dictionary which contains:</p> <p>all parameters from file /etc/sysconfig/lvestats2 (global).
+plugin's individual configuration file parameters (if one exists). Configuration files must be located in /etc/sysconfig/lvestats.config directory, have .cfg extension and be the same format as /etc/sysconfig/lvestats2. Files in this directory are matched with the plugins by name. For instance, if plugin's class is , then server will try to find and download /etc/sysconfig/lvestats.config/Plugin1_class.cfg. Names are case sensitive. If any plugin doesn't have an individual configuration file, then it's not an error. In this case plugin will just receive parameters from /etc/sysconfig/lvestats2.</p> <h3 id="types-of-plugins"><a href="#types-of-plugins" aria-hidden="true" class="header-anchor">#</a> Types of Plugins</h3> <p>According to server architecture, plugins can be of the following types:</p> <p>are designed to collect information; – to analyze it and form some other data on its basis; – to save information from the common dictionary into files, databases, etc.; - to notify system users about any events.</p> <p>This division is rather arbitrary. There is an opportunity to execute all the actions on collection, analysis and saving the information in one and only plugin. But at the same time the division into functionally independent parts allows to build flexible and easily configurable system for collecting and processing the data.</p> <p>Also it is possible to implement the systems of lazy-write, planning of collecting/processing tasks and notifying users about different events.</p> <h3 id="examples-of-plugins"><a href="#examples-of-plugins" aria-hidden="true" class="header-anchor">#</a> Examples of Plugins</h3> <p>Here is a practical example of a user plugin.</p> <p>Specification:</p> <ol><li><p>To trace specified file size changes. The name of file being traced must be specified in configuration file, which allows to change it without modifying the plugin itself. If file size has been changed, it has to be written as a message into our log. The name of log must be specified in configuration file as well.</p></li> <li><p>File size must be checked with default interval (5 seconds), and log notification must be held once a minute (to avoid resource expend for possibly regular write).</p></li> <li><p>System administrator must receive emails with file size at the moment the email was sent. These notifications must be sent even if the file size hasn’t been changed. Notification emails must be read periodicity from configuration file as well as sender/receiver emails .</p></li></ol> <p>As file size check, fixing the result and notification sending must be held with different periods, then it’s impossible to realize all the tasks by means of one plugin.
+The fact that one minute (60 seconds) is multiple to 5 seconds doesn’t matter in this case, because default period can be changed in server’s configuration file, but the condition of fixing the result once a minute is a part of the specification, which can not be violated. In addition, notification email period is known in advance, as it is specified by user in configuration file.</p> <p>That is why we realize 4 plugins: ** ** and .</p> <h4 id="collector"><a href="#collector" aria-hidden="true" class="header-anchor">#</a> Collector</h4> <p>aim is to determine the size of a proper file.</p> <div class="language- extra-class"><pre class="language-text"><code># FSize_watcher_collector.py
+# Example plugin for monitoring file size.
+# Part 1. Collector
+
+import os
+from lvestats.core.plugin import LveStatsPlugin
+ 
+# Key name
+COLLECTOR_KEY = 'FSizeWatcher_fsize'
+COLLECTOR_KEY_FILENAME = 'FSizeWatcher_fname'
+ 
+ 
+class FSize_watcher_collector (LveStatsPlugin):
+# this plugin should be first in chain
+order = 0
+# File to monitoring
+file_to_monitoring = None
+ 
+def __init__(self):
+pass
+ 
+# Sets configuration to plugin
+def set_config(self, config):
+self.file_to_monitoring = config.get('file_to_monitoring', None)
+pass
+# Work method
+def execute(self, lve_data):
+try:
+# if monitoring file absent, do nothing
+if self.file_to_monitoring is None or not os.path.exists(self.file_to_monitoring):
+return
+ 
+# Get file size
+stat_info = os.stat(self.file_to_monitoring)
+fsize = stat_info.st_size
+ 
+# Place file name and file size to server data dictionary
+lve_data[COLLECTOR_KEY_FILENAME] = self.file_to_monitoring
+lve_data[COLLECTOR_KEY] = fsize
+except (OSError, IOError):
+# file absent or any other error - remove size from dictionary
+del lve_data[COLLECTOR_KEY]
+</code></pre></div><p>Plugin algorithm is extremely simple – file size is read and written into data dictionary. Files name is read from <em>set_config</em> method configuration. If the name is not specified, then is written into appropriate variable. All the errors are completely ignored (e.g. if specified file doesn't exist or there's no way to read any of it's information).</p> <p>attribute is specified as 0 to make this plugin go the first among three. Data collector must always be the first in plugins logical chain, because it provides all the necessary information for the analyzer which goes the next. Specific values of я can be of any kind, but what is important is that when the server starts, all the plugins line up in proper sequence: .</p> <p>In order to make plugin work, we have to create configuration file /etc/sysconfig/lvestats.config/FSize_watcher_collector.cfg with the following content:</p> <div class="language- extra-class"><pre class="language-text"><code># Config file for FSize_watcher_collector plugin
+# Please define monitoring file here
+#file_to_monitoring = /usr/local/cpanel/logs/error_log
+file_to_monitoring = /usr/local/cpanel/logs/access_log
+</code></pre></div><p>Note that file’s name without .cfg extension matches plugin class name.</p> <p>option is read by plugin in method and contains file’s full name for monitoring.</p> <p>Files for monitoring, suggested in the actual example - /usr/local/cpanel/logs/error_log and /usr/local/cpanel/logs/access_log - are real, these are cPanel control panel logs.</p> <p>The first file is errors log; the second is appeal log, is refreshed during common work with panel (e.g. if user email address is changed).</p> <p>Errors log tracking is more important, but appeal log monitoring allows to illustrate plugins work more in details, because it is refreshed more often.</p> <p>Note that plugin can monitor one file only.</p> <h4 id="analizer"><a href="#analizer" aria-hidden="true" class="header-anchor">#</a> Analizer</h4> <p>decides if the file's size has changed and gives a command to persistor to refresh log.</p> <div class="language- extra-class"><pre class="language-text"><code># FSize_watcher_analyzer.py
+# Example plugin for monitoring file size.
+# Part 2. Analyzer
+ 
+from lvestats.core.plugin import LveStatsPlugin
+ 
+# Key name from collector plugin
+COLLECTOR_KEY = 'FSizeWatcher_fsize'
+ 
+# Key name 1 for saver plugin
+SAVER_KEY = 'FSizeWatcher_fsize_to_store'
+# Key name 2 for saver plugin
+SAVER_DATA_PRESENCE = 'FSizeWatcher_fsize_present'
+ 
+ 
+class FSize_watcher_analyzer (LveStatsPlugin):
+# this plugin should be second in chain
+order = 1
+# Last file size
+file_last_size = 0
+# Plugin run period in seconds
+period = 60
+ 
+def __init__(self):
+pass
+ 
+# work method
+def execute(self, lve_data):
+# Default setting for saver
+lve_data[SAVER_DATA_PRESENCE] = 0
+# Check presence data
+if COLLECTOR_KEY not in lve_data:
+return
+ 
+# Get file size from server data dictionary
+fsize = lve_data[COLLECTOR_KEY]
+ 
+# Check, if file size changed, store it for saver plugin
+if fsize == self.file_last_size:
+return
+ 
+# Put new size for saver plugin
+lve_data[SAVER_KEY] = fsize
+self.file_last_size = fsize
+lve_data[SAVER_DATA_PRESENCE] = 1
+</code></pre></div><p>This plugin is extremely simple as well. It starts after , searches for file size in the dictionary and compares it with the previous index. If it has changed, then it writes a sign of presence of a new size into the dictionary. If no changes seen, then sign resets. The previous file size is stored in the plugin itself in variable. Note that they are stored during the whole server lifetime.</p> <p>If file size is not found in data dictionary, then plugin just ends.</p> <p>All the errors are completely ignored.</p> <p>is unconfigurable, that is why it doesn’t require any configuration file and it doesn’t contain method.</p> <p>Plugin starts every 60 seconds (1 minute), because we need data fixation to be performed one time in a minute.</p> <h4 id="persistor"><a href="#persistor" aria-hidden="true" class="header-anchor">#</a> Persistor</h4> <p>saves information from the common dictionary into files, databases, etc.</p> <div class="language- extra-class"><pre class="language-text"><code># FSize_watcher_saver.py
+# Example plugin for monitoring file size and last modification date-time.
+# Part 3. Data saver
+ 
+import signal
+import sys
+import time
+from lvestats.core.plugin import LveStatsPlugin
+ 
+# Key name 1 for saver plugin
+SAVER_KEY = 'FSizeWatcher_fsize_to_store'
+# Key name 2 for saver plugin
+SAVER_DATA_PRESENCE = 'FSizeWatcher_fsize_present'
+# Monitoring file name
+COLLECTOR_KEY_FILENAME = 'FSizeWatcher_fname'
+ 
+ 
+class FSize_watcher_saver (LveStatsPlugin):
+# this plugin should be third in chain
+order = 2
+# Plugin run period in seconds
+period = 60
+# Log filename
+log_file_name = None
+# First run flag
+is_first_run = True
+ 
+def __init__(self):
+signal.signal(signal.SIGTERM, self.sigterm_handler)
+ 
+# Sets configuration to plugin
+def set_config(self, config):
+# Get log filename
+self.log_file_name = config.get('log_filename', None)
+ 
+# work method
+def execute(self, lve_data):
+# do nothing, if log file not defined
+if not self.log_file_name:
+return
+try:
+# Check presence data
+if SAVER_DATA_PRESENCE not in lve_data or lve_data[SAVER_DATA_PRESENCE] == 0:
+# No data
+return
+# Get file size from server data dictionary
+fsize = lve_data[SAVER_KEY]
+
+# Store data to log
+f = open(self.log_file_name, 'a')
+if self.is_first_run:
+f.write('%s - FSize_watcher started. Monitoring file: %s, saving data period=%d sec\n' % (time.asctime(time.localtime()), lve_data[COLLECTOR_KEY_FILENAME], self.period))
+self.is_first_run = False
+f.write('%s - FSize_watcher: file size is %d bytes\n' % (time.asctime(time.localtime()), fsize))
+f.close()
+except:
+# Ignore all errors
+pass
+ 
+# Terminate handler
+def sigterm_handler(self, signum, frame):
+if self.log_file_name:
+try:
+# Store data to log file
+f = open(self.log_file_name, 'a')
+f.write('%s - File watcher saver plugin: TERMINATE\n' % time.asctime(time.localtime()))
+f.close()
+pass
+except:
+# Ignore all errors
+pass
+# Terminate process
+sys.exit(0)
+</code></pre></div><p>Configuration file <em>/etc/sysconfig/lvestats.config/FSize_watcher_saver.cfg</em> :</p> <div class="language- extra-class"><pre class="language-text"><code># Config file for FSize_watcher_saver.py plugin
+# Please define log filename here
+log_filename = /var/log/FSize_watcher.log
+</code></pre></div><p>This plugin starts after , checks new file size flag, and if positive – writes it into log. If the flag is cleared (which means the size hasn't changed), then plugin simply ends.</p> <p>Starts once in a minute (period=60).</p> <p>Also this plugin shows the work of signal handler.</p> <p>Plugin constructor registers handler-function of a  proper signal: This means, that when the server finishes its work, then method of plugin class will be invoked. In the actual example the function just writes a notification into log, tracing the fact of it's invocation.</p> <p>Pay attention on command in the end of the handler. Find the information on it in section.</p> <p>In addition see into examples of file log /var/log/FSize_watcher.log formed by the plugins above:</p> <p><em>Tue Feb  3 13:06:24 2015 - FSize_watcher started. Monitoring file: /usr/local/cpanel/logs/access_log, saving data period=60 sec</em> <em>Tue Feb  3 13:06:24 2015 - FSize_watcher: file size is 122972890 bytes</em> <em>Tue Feb  3 13:07:25 2015 - FSize_watcher: file size is 122975507 bytes</em> <em>Tue Feb  3 13:08:25 2015 - FSize_watcher: file size is 122978124 bytes</em> <em>Tue Feb  3 13:09:25 2015 - FSize_watcher: file size is 122978997 bytes</em> <em>Tue Feb  3 13:10:25 2015 - FSize_watcher: file size is 122981033 bytes</em> <em>Tue Feb  3 13:11:25 2015 - FSize_watcher: file size is 122982052 bytes</em> <em>Tue Feb  3 13:13:25 2015 - FSize_watcher: file size is 122983798 bytes</em> <em>Tue Feb  3 13:20:15 2015 - File watcher saver plugin: TERMINATE</em></p> <p>and</p> <p><em>Thu Feb  5 13:07:27 2015 - FSize_watcher started. Monitoring file: /usr/local/cpanel/logs/error_log, saving data period=60 sec</em> <em>Thu Feb  5 13:07:27 2015 - FSize_watcher: file size is 14771849 bytes</em> <em>Thu Feb  5 14:03:32 2015 - FSize_watcher: file size is 14771995 bytes</em> <em>Thu Feb  5 15:01:36 2015 - FSize_watcher: file size is 14772434 bytes</em> <em>Thu Feb  5 17:15:47 2015 - FSize_watcher: file size is 14772873 bytes</em> <em>Thu Feb  5 18:47:54 2015 - FSize_watcher: file size is 14775213 bytes</em> <em>Thu Feb  5 19:11:56 2015 - FSize_watcher: file size is 14775652 bytes</em> <em>Thu Feb  5 21:09:05 2015 - FSize_watcher: file size is 14776091 bytes</em> <em>Thu Feb  5 23:06:14 2015 - FSize_watcher: file size is 14776530 bytes</em> <em>Fri Feb  6 00:47:23 2015 - FSize_watcher: file size is 14778870 bytes</em> <em>Fri Feb  6 01:02:24 2015 - FSize_watcher: file size is 14779309 bytes</em> <em>Fri Feb  6 02:00:28 2015 - FSize_watcher: file size is 14779434 bytes</em> <em>Fri Feb  6 03:16:34 2015 - FSize_watcher: file size is 14779873 bytes</em> <em>Fri Feb  6 05:04:42 2015 - FSize_watcher: file size is 14779998 bytes</em> <em>Fri Feb  6 05:12:43 2015 - FSize_watcher: file size is 14780437 bytes</em> <em>Fri Feb  6 05:56:50 2015 - FSize_watcher: file size is 14780551 bytes</em> <em>Fri Feb  6 06:01:50 2015 - FSize_watcher: file size is 14780975 bytes</em> <em>Fri Feb  6 06:03:51 2015 - FSize_watcher: file size is 14782183 bytes</em> <em>Fri Feb  6 06:04:51 2015 - FSize_watcher: file size is 14782575 bytes</em> <em>Fri Feb  6 06:18:52 2015 - FSize_watcher: file size is 14782647 bytes</em> <em>Fri Feb  6 06:21:52 2015 - FSize_watcher: file size is 14782898 bytes</em> <em>Fri Feb  6 06:48:54 2015 - FSize_watcher: file size is 14785238 bytes</em> <em>Fri Feb  6 07:09:56 2015 - FSize_watcher: file size is 14785677 bytes</em> <em>Tue Feb  6 08:03:15 2015 - File watcher saver plugin: TERMINATE</em></p> <p>You can see that log record is being held once a minute (what we actually need), new file size is written.</p> <p>Also we can notice that handler was executed, signaling that plugin received the notification about server shut-down.</p> <h4 id="notifier"><a href="#notifier" aria-hidden="true" class="header-anchor">#</a> Notifier</h4> <p>informs system users about any events.</p> <div class="language- extra-class"><pre class="language-text"><code># FSize_watcher_saver.py
+# Example plugin for monitoring file size and last modification date-time.
+# Part 4. Notifier
+ 
+import time
+import smtplib
+ 
+from lvestats.lib.commons import dateutil
+from lvestats.core.plugin import LveStatsPlugin
+ 
+ 
+# Key name
+COLLECTOR_KEY_FSIZE = 'FSizeWatcher_fsize'
+COLLECTOR_KEY_FILENAME = 'FSizeWatcher_fname'
+ 
+# email message pattern
+EMAIL_MESSAGE_PATTERN = &quot;&quot;&quot;Hello, administrator!
+Size of the file '%s' is %d bytes.
+&quot;&quot;&quot;
+ 
+ 
+class FSize_watcher_notifier (LveStatsPlugin):
+# Default period
+DEFAULT_PERIOD_STR = '12h'
+# this plugin should be third in chain
+order = 3
+# Timeout
+timeout = 20
+# Notifier Log filename
+log_file_name = '/var/log/FSize_watcher_notifier.log'
+# Email from address
+email_from = None
+# Email to address
+email_to = None
+# Email subject
+email_subject = None
+# Sets configuration to plugin
+def set_config(self, config):
+# Email settings
+self.email_from = config.get('notify_from_email', None)
+self.email_to = config.get('notify_to_email', None)
+self.email_subject = config.get('notify_from_subject', 'Message from FSize_watcher_notifier plugin')
+# Notify period
+s_period = config.get('notify_period', None)
+if s_period:
+self.period = dateutil.parse_period2(s_period)
+else:
+self.period = dateutil.parse_period2(FSize_watcher_notifier.DEFAULT_PERIOD_STR)
+f = open(self.log_file_name, 'a')
+f.write('%s - FSize_watcher_notifier plugin: configure\n' % time.asctime(time.localtime()))
+f.write('       - Period: %s\n' % self.period)
+f.write('       - From: %s\n' % self.email_from)
+f.write('       - To: %s\n' % self.email_to)
+f.write('       - Subject: \'%s\'\n' % self.email_subject)
+f.close()
+ 
+# work method
+def execute(self, lve_data):
+if COLLECTOR_KEY_FSIZE not in lve_data or COLLECTOR_KEY_FILENAME not in lve_data:
+return
+if not self.email_from or not self.email_to:
+f = open(self.log_file_name, 'a')
+f.write('%s - FSize_watcher_notifier plugin error: email_from or email_to not set\n')
+f.close()
+return
+try:
+from email.mime.text import MIMEText
+# Send email
+msg = MIMEText(EMAIL_MESSAGE_PATTERN % (lve_data[COLLECTOR_KEY_FILENAME], lve_data[COLLECTOR_KEY_FSIZE]))
+msg['Subject'] = self.email_subject
+msg['From'] = self.email_from
+msg['To'] = self.email_to
+ 
+s = smtplib.SMTP('localhost')
+s.sendmail(self.email_from, [self.email_to], msg.as_string())
+s.quit()
+ 
+f = open(self.log_file_name, 'a')
+f.write('%s - FSize_watcher_notifier plugin: email message was successfully sent\n' % time.asctime(time.localtime()))
+f.close()
+except Exception as e:
+f = open(self.log_file_name, 'a')
+f.write('%s - FSize_watcher_notifier plugin error:\n%s\n' % (time.asctime(time.localtime()), str(e)))
+f.close()
+</code></pre></div><p>Configuration file <em>/etc/sysconfig/lvestats.config/FSize_watcher_notifier.cfg</em> :</p> <div class="language- extra-class"><pre class="language-text"><code># Config file for FSize_watcher_notifier.py plugin
+# Please define email options here
+ 
+NOTIFY_FROM_EMAIL=user@hostname
+NOTIFY_FROM_SUBJECT=Message from FSize_watcher_notifier
+NOTIFY_TO_EMAIL=admin@hostname
+NOTIFY_PERIOD=12h
+</code></pre></div><p>Plugin’s index number equals 3 ( ), that is why starts after the rest. But since it uses only data formed by , then its order may equal any number bigger that order (&gt;0).</p> <p>reads the necessary parameters from the configuration (email address, topic, period) and writes them into its own log as reference.</p> <p>Plugin’s method checks the availability of all the necessary data (email parameters, collectors data) and sends the message. All the notifications are written into the own log.</p> <p>If any data is missing,  the message is not sent.</p> <p>Log example:</p> <p><em>Thu Feb  5 11:51:34 2015 - FSize_watcher_notifier plugin: configure</em>
+_       - Period: 60.0_
+_       - From: user@hostname_
+_       - To: admin@hostname_
+_       - Subject: 'Message from FSize_watcher_notifier'_
+<em>Thu Feb  5 11:51:35 2015 - FSize_watcher_notifier plugin: email message was successfully sent</em> <em>Thu Feb  5 11:52:35 2015 - FSize_watcher_notifier plugin: email message was successfully sent</em> <em>Thu Feb  5 11:53:35 2015 - FSize_watcher_notifier plugin: email message was successfully sent</em> <em>Thu Feb  5 11:54:35 2015 - FSize_watcher_notifier plugin: email message was successfully sent</em> <em>Thu Feb  5 11:57:00 2015 - FSize_watcher_notifier plugin: configure</em>
+_       - Period: 43200.0_
+_       - From: user@hostname_
+_       - To: admin@hostname_
+_       - Subject: 'Message from FSize_watcher_notifier'_
+<em>Thu Feb  5 11:57:00 2015 - FSize_watcher_notifier plugin: email message was successfully sent</em></p> <h2 id="file-info-and-format-for-var-lve-info-file"><a href="#file-info-and-format-for-var-lve-info-file" aria-hidden="true" class="header-anchor">#</a> File info and format for /var/lve/info file</h2> <p>This file is used by control panels to display to user their 'current' usage. The file is updated every 5 seconds by lve-stats.</p> <p>When writing to this file we make sure that: average is never more then for that resource.</p> <p>Example:</p> <p>0,0,20,0,2500,0,262144,0,0,262144,0,0,100,0,0,0,0,1024,1024,0,0,0,0
+600,1,20,2492,2500,70,262144,0,0,262144,33,0,100,1,0,0,0,1024,1024,0,5,0,0
+200,0,20,0,2500,0,262144,0,0,262144,0,0,100,0,0,0,0,1024,1024,0,0,0,0
+500,0,20,0,2500,0,262144,0,0,262144,0,0,100,0,0,0,0,1024,1024,0,0,0,0</p> <p>First line of the file is ' '.</p> <p>Fields:</p> <h1 id="_0-id"><a href="#_0-id" aria-hidden="true" class="header-anchor">#</a> 0 - id</h1> <h1 id="_1-mep-average-entry-processes"><a href="#_1-mep-average-entry-processes" aria-hidden="true" class="header-anchor">#</a> 1 - mep (average entry processes)</h1> <h1 id="_2-lep-limit"><a href="#_2-lep-limit" aria-hidden="true" class="header-anchor">#</a> 2 - lep  (limit ...)</h1> <h1 id="_3-cpu-usage-average-speed"><a href="#_3-cpu-usage-average-speed" aria-hidden="true" class="header-anchor">#</a> 3 - cpu_usage (average speed)</h1> <h1 id="_4-lcpu-limit-spped"><a href="#_4-lcpu-limit-spped" aria-hidden="true" class="header-anchor">#</a> 4 - lcpu (limit spped)</h1> <h1 id="_5-mem-usage-average-virtual-memory"><a href="#_5-mem-usage-average-virtual-memory" aria-hidden="true" class="header-anchor">#</a> 5 - mem_usage (average virtual memory)</h1> <h1 id="_6-lmem-limit"><a href="#_6-lmem-limit" aria-hidden="true" class="header-anchor">#</a> 6 - lmem (limit ...)</h1> <h1 id="_7-mem-fault-number-of-virtual-memory-faults"><a href="#_7-mem-fault-number-of-virtual-memory-faults" aria-hidden="true" class="header-anchor">#</a> 7 - mem_fault (number of virtual memory faults)</h1> <h1 id="_8-mep-fault-number-of-entry-processes-faults"><a href="#_8-mep-fault-number-of-entry-processes-faults" aria-hidden="true" class="header-anchor">#</a> 8 - mep_fault (number of entry processes faults)</h1> <p>LVE_VERSION &gt;=6</p> <h1 id="_9-lmemphy-limit-physical-memory"><a href="#_9-lmemphy-limit-physical-memory" aria-hidden="true" class="header-anchor">#</a> 9 - lmemphy (limit physical memory)</h1> <h1 id="_10-memphy-average"><a href="#_10-memphy-average" aria-hidden="true" class="header-anchor">#</a> 10 - memphy (average ...)</h1> <h1 id="_11-memphy-fault-faults"><a href="#_11-memphy-fault-faults" aria-hidden="true" class="header-anchor">#</a> 11 - memphy_fault (faults ...)</h1> <h1 id="_12-lnproc-limit-number-of-processes"><a href="#_12-lnproc-limit-number-of-processes" aria-hidden="true" class="header-anchor">#</a> 12 - lnproc (limit number of processes)</h1> <h1 id="_13-nproc-average"><a href="#_13-nproc-average" aria-hidden="true" class="header-anchor">#</a> 13 - nproc (average ...)</h1> <h1 id="_14-nproc-fault-faults"><a href="#_14-nproc-fault-faults" aria-hidden="true" class="header-anchor">#</a> 14 - nproc_fault (faults ...)</h1> <h1 id="_15-lcpuw-cpu-weight-deprecated-not-used"><a href="#_15-lcpuw-cpu-weight-deprecated-not-used" aria-hidden="true" class="header-anchor">#</a> 15 - lcpuw (CPU weight -- deprecated not used)</h1> <h1 id="_16-io-usage-average-io-usage"><a href="#_16-io-usage-average-io-usage" aria-hidden="true" class="header-anchor">#</a> 16 - io_usage (average IO usage)</h1> <h1 id="_17-io-limit-limit"><a href="#_17-io-limit-limit" aria-hidden="true" class="header-anchor">#</a> 17 - io_limit (limit ...)</h1> <p>LVE_VERSION &gt;=8
+#18 - liops  (limit IOPS)
+#19 - iops (average IOPS)</p> <h2 id="troubleshooting"><a href="#troubleshooting" aria-hidden="true" class="header-anchor">#</a> Troubleshooting</h2> <p>service and utilities write fatal errors to system log.</p> <p>There is _ /var/log/lve-stats.log_ file with additional information (warnings, tracebacks for errors)</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/reseller_limits/" class="prev">
+          Reseller Limits
+        </a></span> <span class="next"><a href="/cagefs/">
+          CageFS
+        </a>
+        →
+      </span></p></div> </div> <div class="footer" data-v-ac83a848><div data-v-ac83a848><a href="https://cloudlinux.com" data-v-ac83a848><img src="/assets/img/we-are-cloudlinux.783ed390.svg" alt="We are Cloudlinux" data-v-ac83a848></a></div> <div data-v-ac83a848>2018. CloudLinux Inc</div> <div data-v-ac83a848><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>How to</a></div><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>Getting started</a></div><div data-v-ac83a848><a href="https://cloudlinux.zendesk.com/hc/en-us/requests/new" target="_blank" data-v-ac83a848>Contact support</a></div><div data-v-ac83a848><a href="https://www.cloudlinux.com/blog" target="_blank" data-v-ac83a848>Blog</a></div></div> <div class="social" data-v-ac83a848><span data-v-ac83a848>Stay in touch</span> <a href="https://www.facebook.com/cloudlinux/" target="_blank" data-v-ac83a848><img src="/fb.svg" data-v-ac83a848></a><a href="https://twitter.com/cloudlinuxos/" target="_blank" data-v-ac83a848><img src="/tw.svg" data-v-ac83a848></a><a href="https://linkedin.com/company/cloudlinux" target="_blank" data-v-ac83a848><img src="/in.svg" data-v-ac83a848></a><a href="https://www.youtube.com/channel/UCZ3YMHWnMP7TaxlXVay5-aw" target="_blank" data-v-ac83a848><img src="/ytube.svg" data-v-ac83a848></a></div></div> <!----></div></div>
+    <script src="/assets/js/app.0abf6f2a.js" defer></script><script src="/assets/js/19.6a071eb7.js" defer></script>
+  </body>
+</html>

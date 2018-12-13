@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Deprecated | Documentation</title>
+    <meta name="description" content="Kernelcare documentation">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.166b4f65.css" as="style"><link rel="preload" href="/assets/js/app.0abf6f2a.js" as="script"><link rel="preload" href="/assets/js/12.86ab74a0.js" as="script"><link rel="prefetch" href="/assets/js/10.637ec29d.js"><link rel="prefetch" href="/assets/js/11.5bc4e224.js"><link rel="prefetch" href="/assets/js/13.57ab5c71.js"><link rel="prefetch" href="/assets/js/14.fd3e69ee.js"><link rel="prefetch" href="/assets/js/15.ae08bd81.js"><link rel="prefetch" href="/assets/js/16.c78fdb9f.js"><link rel="prefetch" href="/assets/js/17.1fdd51cc.js"><link rel="prefetch" href="/assets/js/18.2e9e3c46.js"><link rel="prefetch" href="/assets/js/19.6a071eb7.js"><link rel="prefetch" href="/assets/js/20.03d7f633.js"><link rel="prefetch" href="/assets/js/21.c64caaaa.js"><link rel="prefetch" href="/assets/js/22.c03a1b94.js"><link rel="prefetch" href="/assets/js/23.a5cd9404.js"><link rel="prefetch" href="/assets/js/24.b90fb854.js"><link rel="prefetch" href="/assets/js/25.42c7c91b.js"><link rel="prefetch" href="/assets/js/26.159622d1.js"><link rel="prefetch" href="/assets/js/27.e8de38ef.js"><link rel="prefetch" href="/assets/js/28.ac2756db.js"><link rel="prefetch" href="/assets/js/3.5515951d.js"><link rel="prefetch" href="/assets/js/4.4d6450cb.js"><link rel="prefetch" href="/assets/js/5.90579adc.js"><link rel="prefetch" href="/assets/js/6.3f73b2ab.js"><link rel="prefetch" href="/assets/js/7.a073d98e.js"><link rel="prefetch" href="/assets/js/8.29039cd1.js"><link rel="prefetch" href="/assets/js/9.ef4b91a3.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.28e1d2e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.166b4f65.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Documentation" class="logo"> <span class="site-name can-hide">Documentation</span></a> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value="Search"> <!----></div> <div class="links" style="max-width:nullpx;"><a href="https://cloudlinux.com/trial" target="_blank" class="btn">
+      Try Free
+    </a> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Content</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/cloudlinux_installation/" class="sidebar-link">Installation</a></li><li><a href="/limits/" class="sidebar-link">Limits</a></li><li><a href="/lve_manager/" class="sidebar-link">LVE Manager</a></li><li><a href="/reseller_limits/" class="sidebar-link">Reseller Limits</a></li><li><a href="/lve-stats_2/" class="sidebar-link">LVE-Stats 2</a></li><li><a href="/cagefs/" class="sidebar-link">CageFS</a></li><li><a href="/mysql_governor/" class="sidebar-link">MySQL Governor</a></li><li><a href="/php_selector/" class="sidebar-link">PHP Selector</a></li><li><a href="/python_and_ruby_selector/" class="sidebar-link">Python</a></li><li><a href="/node_js_selector/" class="sidebar-link">Node.js Selector</a></li><li><a href="/inodes_limits/" class="sidebar-link">inodes</a></li><li><a href="/kernel_settings/" class="sidebar-link">Kernel Settings</a></li><li><a href="/apache_mod_lsapi/" class="sidebar-link">Apache mod_lsapi</a></li><li><a href="/cloudlinux-fchange/" class="sidebar-link">File Change API</a></li><li><a href="/mod_proctitle/" class="sidebar-link">mod_proctitle</a></li><li><a href="/additional_packages/" class="sidebar-link">Additional Packages</a></li><li><a href="/integration_guide/" class="sidebar-link">Integration Guide</a></li><li><a href="/partner_portal/" class="sidebar-link">Partner Portal</a></li><li><a href="/cloudlinux_network/" class="sidebar-link">CloudLinux Network</a></li><li><a href="/cloudlinux_whmcs_plugin/" class="sidebar-link">CloudLinux WHMCS Plugin</a></li><li><a href="/deprecated/" class="active sidebar-link">Deprecated</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/deprecated/#lve-stats-0-x" class="sidebar-link">LVE-Stats 0.x</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/deprecated/#storing-statistics-in-mysql" class="sidebar-link">Storing statistics in MySQL</a></li><li class="sidebar-sub-header"><a href="/deprecated/#storing-statistics-in-postgresql" class="sidebar-link">Storing statistics in PostgreSQL</a></li><li class="sidebar-sub-header"><a href="/deprecated/#compacting-in-multi-server-settings" class="sidebar-link">Compacting in multi-server settings</a></li></ul></li><li class="sidebar-sub-header"><a href="/deprecated/#optimumcache" class="sidebar-link">OptimumCache</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/deprecated/#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/deprecated/#using-without-ploop" class="sidebar-link">Using without ploop</a></li><li class="sidebar-sub-header"><a href="/deprecated/#marking-directories" class="sidebar-link">Marking Directories</a></li><li class="sidebar-sub-header"><a href="/deprecated/#optimumcache-configuration-file" class="sidebar-link">OptimumCache Configuration File</a></li><li class="sidebar-sub-header"><a href="/deprecated/#" class="sidebar-link"></a></li><li class="sidebar-sub-header"><a href="/deprecated/#cloudlinux-collect-collect-system-load-statistics" class="sidebar-link">cloudlinux-collect: Collect System Load Statistics</a></li><li class="sidebar-sub-header"><a href="/deprecated/#uninstall-optimumcache" class="sidebar-link">Uninstall OptimumCache</a></li><li class="sidebar-sub-header"><a href="/deprecated/#troubleshooting" class="sidebar-link">Troubleshooting</a></li></ul></li></ul></li><li><a href="/hardware_compatibility/" class="sidebar-link">Hardware Compatibility</a></li><li><a href="/cloudlinux_life-cycle/" class="sidebar-link">CloudLinux Life cycle</a></li><li><a href="/downloading_documentation/" class="sidebar-link">Downloading Documentation</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="deprecated"><a href="#deprecated" aria-hidden="true" class="header-anchor">#</a> Deprecated</h1> <p><a href="/lve_stats_old/">LVE-Stats 0.x</a></p> <p><a href="/optimumcache/">OptimumCache</a></p> <h2 id="lve-stats-0-x"><a href="#lve-stats-0-x" aria-hidden="true" class="header-anchor">#</a> LVE-Stats 0.x</h2> <p>lve-stats package collects LVE usage statistics and allows to query the data.</p> <p>To install, run:</p> <div class="language- extra-class"><pre class="language-text"><code>$ yum install lve-stats
+</code></pre></div><p>If you are already running lve-stats (in case you are running cPanel LVE plugin), run:</p> <div class="language- extra-class"><pre class="language-text"><code>$ yum update lve-stats
+</code></pre></div><p>This should also be updated automatically next time your system runs system wide update.</p> <p>The package installs lvestats-server. You can re-start the server by running:</p> <div class="language- extra-class"><pre class="language-text"><code>$ service lvestats restart
+</code></pre></div><p>The package creates sqlite database that stores history information about LVE usage. Up to two months of hourly info is stored for each client. The data for the last hour is stored with 5 minutes interval, and the data for the past 10 minutes is stored with 1 minute interval.</p> <p>LVE Stats updates every few seconds. That info is used by plugin.</p> <p>Package consists of lveinfo utility to query LVE usage, and lvechart that allows you to chart usage for individual LVE.</p> <p>To query historical LVE info, lveinfo command provided. It is located at</p> <div class="language- extra-class"><pre class="language-text"><code># /usr/sbin/lveinfo [OPTIONS]
+-h --help              : this help screen
+-v, --version          : version number
+-d, --display-username : try to convert LVE id into username when possible
+-f, --from=            : run report from date and time in YYYY-MM-DD HH:MM format
+      if not present last 10 minutes are assumed
+-t, --to=              : run report up to date and time in YYYY-MM-DD HH:MM format
+      if not present, reports results up to now
+-o, --order-by=        : orders results by one of the following:
+      cpu_avg          : average CPU usage
+      cpu_max          : max CPU usage
+      mep_avg          : average number of entry processes (concurrent connections)
+      mep_max          : max number of entry processes (concurrent connections)
+      vmem_avg         : average virtual memory usage
+      vmem_max         : max virtual memory usage
+      pmem_avg         : average physical memory usage
+      pmem_max         : max physical memory usage
+      nproc_avg        : average number of processes usage
+      nproc_max        : max number of processes usage
+      io_avg           : average IO usage
+      io_max           : max IO usage
+      total_mem_faults : total number of out of virtual memory faults (deprecated since 0.8-6)
+      total_vmem_faults: total number of out of virtual memory faults (since 0.8-6)
+      total_pmem_faults: total number of out of physical memory faults (since 0.8-6)
+      total_mep_faults : total number of entry processes faults (deprecated since 0.8-6)
+      total_ep_faults  : total number of entry processes faults (since 0.8-6)
+      total_nproc_faults: total number of number of processes faults (since 0.8-6)
+      any_faults       : total number of any types of faults (since 0.8-6)
+    --id=              : LVE id -- will display record only for that LVE id
+-u, --user=            : Use username instead of LVE id, and show only record for that user
+-l, --limit=           : max number of results to display, 10 by default
+-c, --csv              : display output in CSV format
+-b, --by-usage         : show LVEs with usage (averaged or max) within 90% percent of the limit
+      available values:
+      cpu_avg          : average CPU usage
+      cpu_max          : max CPU usage
+      mep_avg          : average number of entry processes (concurrent connections)
+      ep_avg           : average number of entry processes (since 0.8-6)
+      mep_max          : max number of entry processes (concurrent connections)
+      ep_max           : max number of entry processes (since 0.8-6)      
+      mem_avg          : average virtual memory usage
+      mem_max          : max virtual memory usage
+      vmem_avg         : average virtual memory usage
+      vmem_max         : max virtual memory usage
+      pmem_avg         : average physical memory usage
+      pmem_max         : max physical memory usage
+      nproc_avg        : average number of processes
+      nproc_max        : max number of processes
+      io_avg           : average IO usage
+      io_max           : max IO usage
+-p, --percentage       : defines percentage for --by-usage option
+-f, --by-fault         : show LVEs which failed on max entry processes limit or memory limit
+      available values: mem, mep. 
+      since 0.8-6      : vmem, pmem, ep, nproc
+    --show-all         : since 0.8-6 only columns for enabled limits will show up. 
+-r, --threshold        : in combination with --by-fault, shows only LVEs with number of faults above threshold specified
+    --server_id        : used in combination with centralized storage, to access info from any server
+    --show-all         : full output (show all limits); brief output by default
+</code></pre></div><table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <ul><li>only enabled limits will show up</li></ul> <p>Display top 10 users, by max usage, from Oct 10, 2010 to Oct 15, 2010. Display username if possible:</p> <div class="language- extra-class"><pre class="language-text"><code>$ lveinfo --from='2010-10-10' --to='2010-10-15' -o cpu_max --display-username 
+ID        aCPU        mCPU        lCPU        aEP        mEP        lEP        aMem        mMem        lMem        MemF        MepF 
+777        7        9        10        0        0        25        10M        15M        1G        0        0 
+300        2        8        10        0        1        25        1M        3M        1G        0        0 
+web2        1        6        10        0        0        25        17K        18M        1G        0        0 
+web1        0        0        10        0        0        25        204K        1M        1G        0        0 
+</code></pre></div><p>Display LVE info about user , from Oct 10, 2010 to Oct 15, 2010:</p> <div class="language- extra-class"><pre class="language-text"><code>$ lveinfo --from='2010-10-10' --to='2010-10-15' --user=web2 --display-username
+ID        aCPU        mCPU        lCPU        aEP        mEP        lEP        aMem        mMem        lMem        MemF        MepF 
+web2        1        6        10        0        0        25        10M        15M        1G        0        0
+</code></pre></div><h3 id="storing-statistics-in-mysql"><a href="#storing-statistics-in-mysql" aria-hidden="true" class="header-anchor">#</a> Storing statistics in MySQL</h3> <p>You have to install MySQL-python rpm to store lve-stats on centralized server. Run:</p> <div class="language- extra-class"><pre class="language-text"><code>$ yum install MySQL-python
+</code></pre></div><p>If you have MySQL 5.3+ installed on CloudLinux 5 server, and there is no  libmysqlclient_r.so.15 on the server, run:</p> <div class="language- extra-class"><pre class="language-text"><code>$ yum --enablerepo=cloudlinux-updates-testing install mysqlclient15
+</code></pre></div><p>A typical procedure to configure the MySQL database for storing information about multiple servers for lve-stats services looks as follows:</p> <p>Create database and user. You can do it by executing the following commands:</p> <div class="language- extra-class"><pre class="language-text"><code>create database &lt;database&gt;;
+grant all on &lt;database&gt;.* to &lt;user&gt; identified by 'password';
+flush privileges;
+</code></pre></div><p>Create database schema:</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE TABLE history (id INTEGER,
+        cpu INTEGER, cpu_limit INTEGER,
+        cpu_max INTEGER,
+        ncpu INTEGER,
+        mep INTEGER, mep_limit INTEGER,
+        mep_max INTEGER,
+        io INTEGER, io_limit INTEGER,
+        mem INTEGER, mem_limit INTEGER,
+        mem_max INTEGER,
+        mem_fault INTEGER, mep_fault INTEGER,
+        created TIMESTAMP, weight INTEGER, server_id CHAR(10),
+        lmemphy INTEGER, memphy INTEGER, memphy_max INTEGER, memphy_fault INTEGER,
+        lnproc INTEGER, nproc INTEGER, nproc_max INTEGER, nproc_fault INTEGER,
+        lcpuw INTEGER, io_max INTEGER,
+        iops INTEGER, liops INTEGER, iops_max INTEGER );
+CREATE INDEX idx_history_id ON history(id);
+CREATE INDEX idx_history_created ON history(created);
+CREATE INDEX idx_history_weight ON history(weight);
+CREATE INDEX idx_history_server_id ON history(server_id);
+CREATE TABLE last_run (hourly TIMESTAMP, daily TIMESTAMP, server_id CHAR(10), lve_version INTEGER);
+CREATE TABLE users (server_id CHAR(10), id INTEGER, username CHAR(20));
+CREATE INDEX idx_users_server_id ON users(server_id);
+CREATE INDEX idx_users_id ON users(id);
+ 
+CREATE TABLE history_gov ( ts INTEGER,
+                           username CHAR(64),
+                           max_simultaneous_requests INTEGER,
+                           sum_cpu FLOAT,
+                           sum_write FLOAT,
+                           sum_read FLOAT,
+                           number_of_iterations INTEGER,
+                           max_cpu FLOAT,
+                           max_write FLOAT,
+                           max_read FLOAT,
+                           number_of_restricts INTEGER,
+                           limit_cpu_on_period_end INTEGER,
+                           limit_read_on_period_end INTEGER,
+                           limit_write_on_period_end INTEGER,
+                           cause_of_restrict INTEGER,
+                           weight INTEGER,
+                           server_id char(10));
+ 
+CREATE INDEX idx_history_gov_ts ON history_gov(ts);
+CREATE INDEX idx_history_gov_cause_of_restrict ON history_gov(cause_of_restrict);
+CREATE INDEX idx_history_gov_number_of_restricts ON history_gov(number_of_restricts); 
+CREATE INDEX idx_history_gov_max_simultaneous_requests ON history_gov(max_simultaneous_requests);
+CREATE INDEX idx_history_gov_server_id ON history_gov(server_id);
+CREATE INDEX idx_history_gov_weight ON history_gov(weight);
+ 
+CREATE TABLE last_run_gov (hourly TIMESTAMP, daily TIMESTAMP, server_id CHAR(10), lve_version INTEGER);
+ 
+ 
+* Execute following SQL command for each remote server for which you want to store
+statistics in this database (make sure you substitute _SERVER_NAME_ with the same
+servername as used in lvestats config file on remote server:
+ 
+INSERT INTO last_run(hourly, daily, server_id, lve_version) VALUES (UTC_TIMESTAMP(), UTC_TIMESTAMP(), '_SERVER_NAME_', 4);
+</code></pre></div><p>On each server edit file as follows:</p> <div class="language- extra-class"><pre class="language-text"><code>db_type = mysql
+connect_string = host:database:user:password
+server_id = _SERVER_NAME_
+db_port = _port_
+</code></pre></div><p>Select server responsible for compacting database on regular bases by setting in for that server. Set on all other servers.</p> <p>Make sure that is readable only by should be readable by anyone</p> <p>Restart service:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart
+</code></pre></div><p>If you use central database to store lvestats data, on each server, execute:</p> <div class="language- extra-class"><pre class="language-text"><code>$ /usr/share/lve-stats/save_users_to_database.py 
+</code></pre></div><p>You just need to execute it once, as it will be later executed via . That script will store usernames from each server, so that lve-stats would later be able to correctly identify each user.</p> <p>If you are using MySQL or PostgreSQL server for lve-stats older then 0.8, make sure to do the following steps to upgrade to latest version:</p> <p>Stop lvestats service on all your servers.</p> <p>Connect to your database server, and execute following commands:</p> <div class="language- extra-class"><pre class="language-text"><code>ALTER TABLE history ADD lmemphy INTEGER;
+ALTER TABLE history ADD memphy INTEGER;
+ALTER TABLE history ADD memphy_max INTEGER;
+ALTER TABLE history ADD memphy_fault INTEGER;
+ALTER TABLE history ADD lnproc INTEGER;
+ALTER TABLE history ADD nproc INTEGER;
+ALTER TABLE history ADD nproc_max INTEGER;
+ALTER TABLE history ADD nproc_fault INTEGER;
+ALTER TABLE history ADD lcpuw INTEGER;
+ALTER TABLE history ADD io_max INTEGER;
+UPDATE history SET lmemphy = 0, memphy = 0, memphy_max = 0, memphy_fault = 0,
+       lnproc = 0, nproc = 0, nproc_max = 0, nproc_fault = 0,
+       lcpuw = 0, io_max = 0;
+ 
+ALTER TABLE last_run ADD lve_version INTEGER;
+UPDATE last_run SET lve_version = 4;
+CREATE TABLE last_run_gov (hourly TIMESTAMP, daily TIMESTAMP, server_id CHAR(10), lve_version INTEGER);
+</code></pre></div><p>To upgrade scheme to support</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE TABLE history_gov ( ts INTEGER,
+    username char(64),
+    max_simultaneous_requests INTEGER,
+    sum_cpu float,
+    sum_write float,
+    sum_read float,
+    number_of_iterations INTEGER,
+    max_cpu float,
+    max_write float,
+    max_read float,
+    number_of_restricts INTEGER,
+    limit_cpu_on_period_end INTEGER,
+    limit_read_on_period_end INTEGER,
+    limit_write_on_period_end INTEGER,
+    cause_of_restrict INTEGER,
+    server_id char(10));
+ 
+CREATE INDEX idx_history_gov_ts ON history_gov(ts);
+CREATE INDEX idx_history_gov_cause_of_restrict ON history_gov(cause_of_restrict);
+CREATE INDEX idx_history_gov_number_of_restricts ON history_gov(number_of_restricts);
+CREATE INDEX idx_history_gov_max_simultaneous_requests ON history_gov(max_simultaneous_requests);
+CREATE INDEX idx_history_gov_server_id ON history_gov(server_id);
+</code></pre></div><p>Upgrading from lve-stats &lt; 0.9-20:</p> <div class="language- extra-class"><pre class="language-text"><code>ALTER TABLE history_gov ADD weight INTEGER;
+CREATE INDEX idx_history_gov_weight ON history_gov(weight);
+CREATE TABLE last_run_gov (hourly TIMESTAMP, daily TIMESTAMP, server_id CHAR(10), lve_version INTEGER);
+</code></pre></div><p>Update lve-stats RPM on all your servers.</p> <p>If you use central database to store lvestats data, execute the following commands:</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE TABLE users (server_id CHAR(10), id INTEGER, username CHAR(20));
+CREATE INDEX idx_users_server_id ON users(server_id);
+CREATE INDEX idx_users_id ON users(id);
+</code></pre></div><p>On each server execute:</p> <div class="language- extra-class"><pre class="language-text"><code>$ /usr/share/lve-stats/save_users_to_database.py
+ 
+</code></pre></div><p>You just need to execute it once, as it will be later executed via cron job. That script will store usernames from each server, so that lve-stats would later be able to correctly identify each user.</p> <h3 id="storing-statistics-in-postgresql"><a href="#storing-statistics-in-postgresql" aria-hidden="true" class="header-anchor">#</a> Storing statistics in PostgreSQL</h3> <p>You have to install to store lve-stats on centralized server. Run:</p> <div class="language- extra-class"><pre class="language-text"><code>$ yum install postgresql-python
+</code></pre></div><p>A typical procedure to configure the PostgreSQL database for storing information about multiple servers for lve-stats services looks as follows:</p> <p>Create a database and a user. You can do it by executing the following commands:</p> <div class="language- extra-class"><pre class="language-text"><code>createdb &lt;database&gt;
+createuser &lt;user&gt;
+</code></pre></div><p>Create database schema:</p> <div class="language- extra-class"><pre class="language-text"><code>CREATE TABLE history (id INTEGER,
+        cpu INTEGER, cpu_limit INTEGER,
+        cpu_max INTEGER,
+        ncpu INTEGER,
+        mep INTEGER, mep_limit INTEGER,
+        mep_max INTEGER,
+        io INTEGER, io_limit INTEGER,
+        mem INTEGER, mem_limit INTEGER,
+        mem_max INTEGER,
+        mem_fault INTEGER, mep_fault INTEGER,
+        created TIMESTAMP, weight INTEGER, server_id CHAR(10),
+        lmemphy INTEGER, memphy INTEGER, memphy_max INTEGER, memphy_fault INTEGER,
+        lnproc INTEGER, nproc INTEGER, nproc_max INTEGER, nproc_fault INTEGER,
+        lcpuw INTEGER, io_max INTEGER,
+</code></pre></div><div class="language- extra-class"><pre class="language-text"><code>        iops_max: INTEGER, liops: INTEGER, iops: INTEGER);
+ 
+CREATE INDEX idx_history_id ON history(id);
+CREATE INDEX idx_history_created ON history(created);
+CREATE INDEX idx_history_weight ON history(weight);
+CREATE INDEX idx_history_server_id ON history(server_id);
+CREATE TABLE last_run (hourly TIMESTAMP, daily TIMESTAMP, server_id CHAR(10), lve_version INTEGER);
+CREATE TABLE users (server_id CHAR(10), id INTEGER, username CHAR(20));
+CREATE INDEX idx_users_server_id ON users(server_id);
+CREATE INDEX idx_users_id ON users(id);
+ 
+CREATE TABLE history_gov ( ts INTEGER,
+    username char(64),
+    max_simultaneous_requests INTEGER,
+    sum_cpu float,
+    sum_write float,
+    sum_read float,
+    number_of_iterations INTEGER,
+    max_cpu float,
+    max_write float,
+    max_read float,
+    number_of_restricts INTEGER,
+    limit_cpu_on_period_end INTEGER,
+    limit_read_on_period_end INTEGER,
+    limit_write_on_period_end INTEGER,
+    cause_of_restrict INTEGER,
+    weight INTEGER,
+    server_id char(10));
+ 
+CREATE INDEX idx_history_gov_ts ON history_gov(ts);
+CREATE INDEX idx_history_gov_cause_of_restrict ON history_gov(cause_of_restrict);
+CREATE INDEX idx_history_gov_number_of_restricts ON history_gov(number_of_restricts);
+CREATE INDEX idx_history_gov_max_simultaneous_requests ON history_gov(max_simultaneous_requests);
+CREATE INDEX idx_history_gov_server_id ON history_gov(server_id);
+CREATE INDEX idx_history_gov_weight ON history_gov(weight);
+ 
+CREATE TABLE last_run_gov (hourly TIMESTAMP, daily TIMESTAMP, server_id CHAR(10), lve_version INTEGER);
+ 
+    * Execute following SQL command for each remote server for which you want to store
+      statistics in this database (make sure you substitute _SERVER_NAME_ with the same
+      servername as used in lvestats config file on remote server:
+ 
+INSERT INTO last_run(hourly, daily, server_id, lve_version) VALUES (now() AT TIME ZONE 'UTC', now() AT TIME ZONE 'UTC', '_SERVER_NAME_', 4);
+</code></pre></div><p>On each server edit file and as follows:</p> <div class="language- extra-class"><pre class="language-text"><code>db_type = postgresql
+connect_string = host:database:user:password
+server_id = _SERVER_NAME_
+db_port = _port_
+</code></pre></div><p>Select server responsible for compacting database on regular bases by setting in for that server. Set on all other servers.</p> <p>Make sure that is readable only by should be readable by anyone.</p> <p>Restart service:</p> <div class="language- extra-class"><pre class="language-text"><code>service lvestats restart
+</code></pre></div><p>If you use central database to store lvestats data, on each server, execute:</p> <div class="language- extra-class"><pre class="language-text"><code>$ /usr/share/lve-stats/save_users_to_database.py 
+</code></pre></div><p>You just need to execute it once, as it will be later executed via . That script will store usernames from each server, so that lve-stats would later be able to correctly identify each user.</p> <p>You are done!</p> <h3 id="compacting-in-multi-server-settings"><a href="#compacting-in-multi-server-settings" aria-hidden="true" class="header-anchor">#</a> Compacting in multi-server settings</h3> <p>[lve-stats 0.10+]</p> <p>When you have multiple servers storing LVE statistics to a central database, then you will need to pick one server responsible for compacting data.</p> <p>On that server, edit file: , and change option to</p> <p>On all other servers, change that option to</p> <p>Default: -- should be used when lve-stats stores data to a single database.</p> <h2 id="optimumcache"><a href="#optimumcache" aria-hidden="true" class="header-anchor">#</a> OptimumCache</h2> <p><strong>OptimumCache 0.2+</strong></p> <p>OptimumCache is a de-duplicating file cache optimized specifically for shared hosting. Typical shared hosting server runs a number of sites with WordPress and Joomla as well as other popular software. This usually means that there are hundreds of duplicate files that are constantly being read into file cache - both wasting precious disk operations as well as memory. OptimumCache creates a cache of such duplicated files and de-duplicates file cache.
+<img src="/images/embim1.png" alt></p> <p>With OptimumCache, if a duplicate of an already loaded file is requested, the file gets loaded from filesystem cache. By doing that, system bypasses disk IO, significantly improving the speed of reading that file, while lowering load on the hard disk. As the file had been read from disk just once, it is cached by filesystem cache just once, minimizing amount of duplicates in file system cache and improving overall cache efficiency. This in turn reduces memory usage, decreases the number of disk operations - all while improving the websites response time.</p> <p>Further reading: <a href="http://kb.cloudlinux.com/tag/optimumcache/" target="_blank" rel="noopener noreferrer">http://kb.cloudlinux.com/tag/optimumcache/<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <h3 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h3> <p>64bit CloudLinux 6.x or higher
+ext4 filesystem
+kernel lve1.2.55 or later.</p> <div class="language- extra-class"><pre class="language-text"><code># yum install optimumcache
+</code></pre></div><p>OptimumCache must be provided with list of directories to expect duplicate files be in:</p> <p><em># occtl --recursive --mark-dir /home</em></p> <p><em># occtl --recursive --mark-dir /home2</em> (for cPanel)</p> <p>(for Plesk)</p> <p>OptimumCache is going to index these directories. Thus system load during this period (from hours to days) might be as twice as high. See 'Marking directories' [ <a href="http://docs.cloudlinux.com/index.html?marking_directories.html" target="_blank" rel="noopener noreferrer">http://docs.cloudlinux.com/index.html?marking_directories.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> ].</p> <p><strong>Allocating Disk Space for OptimumCache:</strong></p> <p>By default OptimumCache will attempt to setup 5GB ploop (high efficiency loopback disk) to be used for the cache in</p> <p>That ploop will be mounted to:</p> <p>The ploop image will be located at</p> <p>Allocating OptimumCache disk space for ploop on a fast drives (like SSD) will provide additional performance improvement as more duplicated files would be loaded from fast disks into memory.</p> <p><strong>Moving ploop image to another location:</strong></p> <div class="language- extra-class"><pre class="language-text"><code># occtl --move-ploop /path/to/new/image/file [new size[KMGT]]
+</code></pre></div><p><em>/path/to/new/image/file</em> must be file path + file name, not a directory name.</p> <p>Example:</p> <h1 id="occtl-move-ploop-var-ssh-optimumcache-image"><a href="#occtl-move-ploop-var-ssh-optimumcache-image" aria-hidden="true" class="header-anchor">#</a> occtl --move-ploop /var/ssh/optimumcache.image</h1> <p>If is not mentioned, then value from is used. If does not mention anything regarding ploop image size, then default 5GB is used.</p> <p><strong>Enabling and disabling ploop:</strong></p> <p>To turn on ploop:</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --init-ploop
+</code></pre></div><p>To disable ploop:</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --disable-ploop
+</code></pre></div><p>If ploop image has been mounted in for OpimumCache-0.1-21 and earlier, you may consider removing this fstab entry in OpimumCache 0.2+. That is because since 0.2+ ploop is mounted automatically at service start.</p> <p>If you prefer leave that fstab mount point as is, you may see some warnings when you decide to move ploop later via .</p> <p><strong>Resizing ploop:</strong></p> <p>To resize ploop:</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --resize-ploop [new size[KMGT]]
+</code></pre></div><p>A common reason for resizing ploop is reacting to OptimumCache syslog message like</p> <p><strong>Deleting ploop:</strong></p> <div class="language- extra-class"><pre class="language-text"><code># occtl --delete-ploop
+</code></pre></div><p>For the case when this action cannot be completed due to issue, there is a workaround in “Troubleshooting” section.</p> <p>Q. I created/resized/moved/deleted ploop. Do I need to rerun the initial mark process?
+А. Not needed.</p> <h3 id="using-without-ploop"><a href="#using-without-ploop" aria-hidden="true" class="header-anchor">#</a> Using without ploop</h3> <p>On servers with kernel prior to lve1.2.55 ploop will not be used (due to ploop related issues in the kernel). Instead cached files will be stored in .
+The cache will be cleaned (shrunk) by 20% once partition on which resides has only 10% of free space. You can change that by changing param in , and restarting optimumcache service.</p> <p>The cache is cleaned script optimumcache_purge, which runs every minute:</p> <p>0-59 * * * * root /usr/share/optimumcache/optimumcache_purge</p> <h3 id="marking-directories"><a href="#marking-directories" aria-hidden="true" class="header-anchor">#</a> Marking Directories</h3> <p><strong>Marking directories to be cached:</strong></p> <div class="language- extra-class"><pre class="language-text"><code># occtl --mark-dir /path/to/site/on/filesystem --recursive
+</code></pre></div><p>In common scenario admin marks for caching user directories:</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --mark-dir /home /home2 /home3 --recursive
+</code></pre></div><p>OptimumCache is going to index these directories. Thus system load during this period (from hours to days) might be as twice as high. You can check indexing job status with at any time.</p> <p><strong>Ignoring particular files &amp; directories:</strong></p> <p>OptimumCache tracks files &amp; directories that need to be cached. Once file is modified, it will no longer be tracked by OptimumCache (as there is very little chance that it will have a duplicate). Yet, all new files created in tracked directories are checked for duplicates.</p> <p>Sometimes you might want to ignore such checks for directories where large number of temporary or new files are created, that will not have duplicates - as such checks are expensive. Directories like mail queue, and tmp directories should be ignored.</p> <p>You can set a regexp mask for directories that you would like to ignore using:</p> <div class="language- extra-class"><pre class="language-text"><code>$ occtl --add-skip-mask REGEX
+</code></pre></div><p>To list skip masks:</p> <div class="language- extra-class"><pre class="language-text"><code>$ occtl --list-skip-mask
+</code></pre></div><p>To remove skip mask:</p> <div class="language- extra-class"><pre class="language-text"><code>$ occtl --remove-skip-mask ID|Tag
+</code></pre></div><p>At the very end, for those changes to take effect:</p> <p>$ occtl --check</p> <p>‘occtl --check’ is the same lengthy operation as is. Thus, it’s usage has to be sane, especially for big (&gt;500G).</p> <p>By default, OptimumCache sets up following skip masks:</p> <table><thead><tr><th></th> <th></th> <th></th></tr></thead> <tbody><tr><td>id</td> <td>tag</td> <td>regex</td></tr> <tr><td>-----</td> <td>------------------</td> <td>---------------</td></tr> <tr><td>1</td> <td>all_dot_files</td> <td>/...*</td></tr> <tr><td>2</td> <td>cagefs</td> <td>^/home/cagefs-skeleton$</td></tr> <tr><td>3</td> <td>cagefs</td> <td>^/home/cagefs-skeleton/</td></tr> <tr><td>4</td> <td>cpanel</td> <td>^/home[^/]*/cPanelInstall</td></tr> <tr><td>5</td> <td>cpanel</td> <td>^/home[^/]*/cpeasyapache</td></tr> <tr><td>6</td> <td>cpanel</td> <td>^/home[^/]*/aquota</td></tr> <tr><td>7</td> <td>cpanel</td> <td>^/home[^/]*/jailshell</td></tr> <tr><td>8</td> <td>cpanel</td> <td>^/home[^/]*/[^/]+/mail$</td></tr> <tr><td>9</td> <td>cpanel</td> <td>^/home[^/]<em>/[^/]+/mail/.</em></td></tr> <tr><td>10</td> <td>cpanel</td> <td>^/home[^/]*/[^/]+/logs$</td></tr> <tr><td>11</td> <td>cpanel</td> <td>^/home[^/]<em>/[^/]+/logs/.</em></td></tr> <tr><td>12</td> <td>cpanel</td> <td>^/home[^/]*/[^/]+/.cpanel$</td></tr> <tr><td>13</td> <td>cpanel</td> <td>^/home[^/]<em>/[^/]+/.cpanel/.</em></td></tr> <tr><td>14</td> <td>cpanel</td> <td>^/home[^/]*/[^/]+/.cagefs</td></tr> <tr><td>15</td> <td>cpanel</td> <td>^/home[^/]<em>/[^/]+/.cagefs/.</em></td></tr> <tr><td>16</td> <td>cpanel</td> <td>^/home[^/]*/virtfs</td></tr> <tr><td>17</td> <td>cpanel</td> <td>^/home[^/]<em>/virtfs/.</em></td></tr> <tr><td>18</td> <td>not_a_userdir</td> <td>^/home/tmp/</td></tr> <tr><td>19</td> <td>not_a_userdir</td> <td>^/home/tmp$</td></tr> <tr><td>20</td> <td>not_a_userdir</td> <td>^/home/ftp/</td></tr> <tr><td>21</td> <td>not_a_userdir</td> <td>^/home/ftp$</td></tr> <tr><td>22</td> <td>not_a_userdir</td> <td>^/home/admin/</td></tr> <tr><td>23</td> <td>not_a_userdir</td> <td>^/home/admin$</td></tr> <tr><td>24</td> <td>quota</td> <td>^/home[^/]*/quota.user$</td></tr> <tr><td>25</td> <td>usermisc</td> <td>/quota.user$</td></tr> <tr><td>26</td> <td>users_home</td> <td>^/home/[^/]+/backups$</td></tr> <tr><td>27</td> <td>users_home</td> <td>^/home/[^/]+/backups/</td></tr> <tr><td>28</td> <td>users_home</td> <td>^/home/[^/]+/imap$</td></tr> <tr><td>29</td> <td>users_home</td> <td>^/home/[^/]+/imap/</td></tr> <tr><td>30</td> <td>users_home</td> <td>^/home/[^/]+/Maildir$</td></tr> <tr><td>31</td> <td>users_home</td> <td>^/home/[^/]+/Maildir/</td></tr> <tr><td>32</td> <td>users_home</td> <td>^/home/[^/]+/domains/[^/]+/logs$</td></tr> <tr><td>33</td> <td>users_home</td> <td>^/home/[^/]+/domains/[^/]+/logs/</td></tr> <tr><td>34</td> <td>users_home</td> <td>^/home/[^/]+/domains/[^/]+/public_ftp$</td></tr> <tr><td>35</td> <td>users_home</td> <td>^/home/[^/]+/domains/[^/]+/public_ftp/</td></tr> <tr><td>36</td> <td>users_home</td> <td>^/home/[^/]+/domains/[^/]+/stats$</td></tr> <tr><td>37</td> <td>users_home</td> <td>^/home/[^/]+/domains/[^/]+/stats/</td></tr></tbody></table> <p>This information is stored in</p> <p><strong>Skip Mask syntax</strong></p> <p>Skip masks use following regexp syntax: <a href="http://www.greenend.org.uk/rjk/tech/regexp.html" target="_blank" rel="noopener noreferrer">http://www.greenend.org.uk/rjk/tech/regexp.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p>For example, to disable caching all directories that contain , you should use skip masks like:</p> <p>/cache/
+/cache$</p> <p>This information is stored in</p> <h3 id="optimumcache-configuration-file"><a href="#optimumcache-configuration-file" aria-hidden="true" class="header-anchor">#</a> OptimumCache Configuration File</h3> <p>/etc/sysconfig/optimumcache</p> <p>OPTIMUMCACHE_MNT=/var/cache/optimumcache</p> <h1 id="valency-to-cache"><a href="#valency-to-cache" aria-hidden="true" class="header-anchor">#</a> Valency to cache</h1> <p>COUNT=0</p> <h1 id="minimal-file-size-to-cache-default-cache-all-files"><a href="#minimal-file-size-to-cache-default-cache-all-files" aria-hidden="true" class="header-anchor">#</a> Minimal file size to cache, default - cache all files</h1> <h1 id="minsize-0"><a href="#minsize-0" aria-hidden="true" class="header-anchor">#</a> MINSIZE=0</h1> <h1 id="minimal-page-number-in-file-to-start-caching-default-1"><a href="#minimal-page-number-in-file-to-start-caching-default-1" aria-hidden="true" class="header-anchor">#</a> Minimal page number in file to start caching, default - 1</h1> <p>PAGEMIN=0</p> <h1 id="maximum-file-size-to-cache-10485760-10mb-by-default"><a href="#maximum-file-size-to-cache-10485760-10mb-by-default" aria-hidden="true" class="header-anchor">#</a> Maximum file size to cache, 10485760 (10MB) by default</h1> <h1 id="maxsize"><a href="#maxsize" aria-hidden="true" class="header-anchor">#</a> MAXSIZE</h1> <h1 id="interval-between-caching-attempts-default-5-seconds"><a href="#interval-between-caching-attempts-default-5-seconds" aria-hidden="true" class="header-anchor">#</a> Interval between caching attempts, default - 5 seconds</h1> <h1 id="timeout-7"><a href="#timeout-7" aria-hidden="true" class="header-anchor">#</a> TIMEOUT=7</h1> <h1 id="adaptive-timeout-upper-limit-seconds"><a href="#adaptive-timeout-upper-limit-seconds" aria-hidden="true" class="header-anchor">#</a> Adaptive timeout upper limit (seconds)</h1> <h1 id="maxtimeout-160"><a href="#maxtimeout-160" aria-hidden="true" class="header-anchor">#</a> MAXTIMEOUT=160</h1> <h1 id="adaptive-timeout-multiplicator-and-divisor"><a href="#adaptive-timeout-multiplicator-and-divisor" aria-hidden="true" class="header-anchor">#</a> Adaptive timeout multiplicator and divisor</h1> <h1 id="timeout-incr-mul-2"><a href="#timeout-incr-mul-2" aria-hidden="true" class="header-anchor">#</a> TIMEOUT_INCR_MUL=2</h1> <h1 id="timeout-decr-div-4"><a href="#timeout-decr-div-4" aria-hidden="true" class="header-anchor">#</a> TIMEOUT_DECR_DIV=4</h1> <h1 id="buffer-size-in-kb-for-optimumcache-dump-default-is-32mb"><a href="#buffer-size-in-kb-for-optimumcache-dump-default-is-32mb" aria-hidden="true" class="header-anchor">#</a> Buffer size in KB for 'optimumcache dump', default is 32MB</h1> <h1 id="dump-buffer-size-32000"><a href="#dump-buffer-size-32000" aria-hidden="true" class="header-anchor">#</a> DUMP_BUFFER_SIZE=32000</h1> <h1 id="extra-space-in-of-requested-to-purge-default-20"><a href="#extra-space-in-of-requested-to-purge-default-20" aria-hidden="true" class="header-anchor">#</a> Extra space in %% of requested to purge, default 20%</h1> <h1 id="purgeahead-20"><a href="#purgeahead-20" aria-hidden="true" class="header-anchor">#</a> PURGEAHEAD=20</h1> <h1 id="experimental-eliminate-frequent-sync-to-address-io-performance"><a href="#experimental-eliminate-frequent-sync-to-address-io-performance" aria-hidden="true" class="header-anchor">#</a> Experimental: Eliminate frequent sync to address IO performance</h1> <p>NOIMMSYNC=1</p> <h1 id="logging-verbosity-default-1-verbose"><a href="#logging-verbosity-default-1-verbose" aria-hidden="true" class="header-anchor">#</a> Logging verbosity, default - 1, verbose</h1> <h1 id="loglevel-1"><a href="#loglevel-1" aria-hidden="true" class="header-anchor">#</a> LOGLEVEL=1</h1> <h1 id="occtl-mark-dir-or-check-operations-io-limit-mb-s-default-is-5-mb-s"><a href="#occtl-mark-dir-or-check-operations-io-limit-mb-s-default-is-5-mb-s" aria-hidden="true" class="header-anchor">#</a> occtl --mark-dir or --check operations IO limit, MB/s, default is 5 MB/s</h1> <h1 id="occtl-lve-io-limit-5"><a href="#occtl-lve-io-limit-5" aria-hidden="true" class="header-anchor">#</a> OCCTL_LVE_IO_LIMIT=5</h1> <h1 id="occtl-mark-dir-or-check-operations-cpu-limit-default-is-50-of-one-cpu-core"><a href="#occtl-mark-dir-or-check-operations-cpu-limit-default-is-50-of-one-cpu-core" aria-hidden="true" class="header-anchor">#</a> occtl --mark-dir or --check operations %cpu limit, default is 50% of one CPU core</h1> <h1 id="occtl-lve-speed-limit-50"><a href="#occtl-lve-speed-limit-50" aria-hidden="true" class="header-anchor">#</a> OCCTL_LVE_SPEED_LIMIT=50</h1> <h1 id="lve-id-to-associate-limits-with"><a href="#lve-id-to-associate-limits-with" aria-hidden="true" class="header-anchor">#</a> Lve ID to associate limits with</h1> <h1 id="lveid-5"><a href="#lveid-5" aria-hidden="true" class="header-anchor">#</a> LVEID=5</h1> <h1 id="collect-perf-statistics-in-var-log-optimumcache-perf-default-is-enabled"><a href="#collect-perf-statistics-in-var-log-optimumcache-perf-default-is-enabled" aria-hidden="true" class="header-anchor">#</a> Collect perf statistics in /var/log/optimumcache_perf. Default is enabled.</h1> <h1 id="perf-log-enabled-1"><a href="#perf-log-enabled-1" aria-hidden="true" class="header-anchor">#</a> PERF_LOG_ENABLED=1</h1> <h3 id><a href="#" aria-hidden="true" class="header-anchor">#</a></h3> <p>OptimumCache is controlled using occtl command line utility.</p> <table><thead><tr><th></th> <th></th> <th></th></tr></thead> <tbody><tr><td><code>usage:</code></td> <td><code>occtl.py</code></td> <td><code>[-h] [--move-ploop param [param ...]] [--check] [--verbose]</code> <code>[--init-ploop [param [param ...]]] [--resize-ploop New Size]</code> <code>[--disable-ploop] [--enable-ploop] [--mount-ploop]</code> <code>[--unmount-ploop] [--delete-ploop] [--unmark-all]</code> <code>[--mark-dir Path [Path ...]] [--unmark-dir Path [Path ...]]</code> <code>[--recursive] [--add-skip-mask Regex]</code> <code>[--remove-skip-mask Id|Tag] [--list-skip-mask] [--silent]</code> <code>[--ignore-unmount-failure] [--no-lve-limits] [--foreground]</code> <code>[--ploop-status] [--remount-cached-points] [--purge]</code> <code>[--cancel-pending-jobs] [--report [Period]]</code> <code>[--recommend-minmax-size]</code></td></tr></tbody></table> <p>Display numbers/percents of cached files:</p> <div class="language- extra-class"><pre class="language-text"><code>optimumcache stat
+</code></pre></div><p>or</p> <div class="language- extra-class"><pre class="language-text"><code>optimumcache stat /home
+</code></pre></div><p>To display statistic for specific mount. In depth display what is being held in cache:</p> <div class="language- extra-class"><pre class="language-text"><code>optimumcache dump [--resolve-filenames] [mount]
+</code></pre></div><p>The option is experimental and may not apply to all output cached entries.</p> <p>Optional Arguments:</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <h3 id="cloudlinux-collect-collect-system-load-statistics"><a href="#cloudlinux-collect-collect-system-load-statistics" aria-hidden="true" class="header-anchor">#</a> cloudlinux-collect: Collect System Load Statistics</h3> <p>Installing this package automatically starts system load statistics collection in background. cloudlinux-collectl package has no strict dependency on OptimumCache, thus the statistics is collected regardless of whether OptimumCache is installed or not. The aim of having this package pre-installed is to compare system performance before and after installing OptimumCache, thus to measure OptimumCache effectiveness.</p> <div class="language- extra-class"><pre class="language-text"><code># yum install cloudlinux-collect --enablerepo=cloudlinux-updates-testing
+</code></pre></div><p>Note: cloudlinux-collectl will be installed automatically on optimumcache upgrade to 0.2-23.</p> <p>cloudlinux-collectl can monitor response time for a configurable set of URLs.</p> <p>Start monitoring new URL:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --addurl &lt;alias&gt; &lt;
+</code></pre></div><p>example:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --addurl localhost 
+</code></pre></div><p>Try for more options.</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --test
+</code></pre></div><p>Actual logs are compressed with gzip and kept in directory.</p> <p>To monitor what statistics are being collected, try command:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --test
+</code></pre></div><p><img src="/images/optimumcachecollect_zoom93.png" alt></p> <p>Along with common statistics blocks as , disk usage, cached, there are two blocks of data to watch how effectively OptimumCache is functioning.</p> <p>refers to data, which is similar to output of command</p> <div class="language- extra-class"><pre class="language-text"><code># optimumcache stat
+</code></pre></div><p>Particularly, the last column percent numbers shall match.</p> <p>The next goes block with url response time in milliseconds. Negative values here may pop up unexpectedly. Negative numbers are not milliseconds, but signal about http error response code for that specific url. For instance, -403 will signal for http error. As for -500 value, it signals not only for , but can be displayed, when there is connection problem with the server, which is specified by the url.</p> <p>is the only statistics, which requires manual configuration. Upon clean installation, it has only preconfigured:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --info
+</code></pre></div><p>To add another url for monitoring:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --addurl alt 
+</code></pre></div><p>To display urls being monitored list:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --info
+</code></pre></div><p>To skip URL from being tracked run command:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --skip &lt;url short name&gt;
+</code></pre></div><p>cloudlinux-collectl has got collectl package as a dependency. Initd script will automatically bring up another instance of collectl named . collectl-optimumcache daemon instance has a separate config and does not interfere with other running pre-configure collectl daemon (if any).</p> <p>As it was mentioned, collectl-optimumcache daemon starts automatically on package install, then on server restart events, kicked by regular Initd script . Thus, checking the daemon status, stop, restart is trivial:</p> <div class="language- extra-class"><pre class="language-text"><code># service cloudlinux-collect status
+collectl-optimumcache (pid  1745) is running…
+</code></pre></div><p>To start /stop:</p> <div class="language- extra-class"><pre class="language-text"><code># service cloudlinux-collect &lt; start | stop &gt;
+</code></pre></div><p>The statistics is being collected into files named under directory</p> <p>To convert those info format suitable for loading into Excel, LibreOffice Calc, another data mining tool, run the command:</p> <div class="language- extra-class"><pre class="language-text"><code># cloudlinux-collect --genplotfiles
+</code></pre></div><h3 id="uninstall-optimumcache"><a href="#uninstall-optimumcache" aria-hidden="true" class="header-anchor">#</a> Uninstall OptimumCache</h3> <p>To uninstall OptimumCache run:</p> <div class="language- extra-class"><pre class="language-text"><code>service optimumcache stop
+occtl --delete-ploop
+:&gt;/var/share/optimumcache_store
+yum remove optimumcache
+</code></pre></div><p>If available: reboot server</p> <p>After the reboot options will disappear by themselves.</p> <p>For OptimumCache version prior 0.2-11, uninstalling via rpm package manager does not automatically removes away ploop image. That is because not always possible to unmount it properly due to kernel dependency. If there is no luck with unmounting ploop, then the server will have to be rebooted and will need to remove ploop files manually:</p> <div class="language- extra-class"><pre class="language-text"><code># rm /var/share/optimumcache/optimumcache.image
+# rm /var/share/optimumcache/DiskDescriptor.xml
+# rm /var/share/optimumcache/DiskDescriptor.xml.lck
+</code></pre></div><p>or</p> <div class="language- extra-class"><pre class="language-text"><code># rm /path/to/ploop/image/file
+# rm /path/to/ploop/image/DiskDescriptor.xml
+# rm /path/to/ploop/image/DiskDescriptor.xml.lck
+</code></pre></div><p>For OptimumCache version 0.2-11 and later, ploop image will be removed automatically during uninstall. If ploop unmount issue prevents doing that, ploop image clean up will be scheduled after next server reboot.</p> <p>If uninstall OptimumCache process lasts for too long, please find the solution in Troubleshooting section of this document.</p> <h3 id="troubleshooting"><a href="#troubleshooting" aria-hidden="true" class="header-anchor">#</a> Troubleshooting</h3> <p><strong>Installing for FS is different from Ext4</strong></p> <p>For now Ext4 is the only supported file system type. If a host has no Ext4 filesystem mounted, OptimumCache package installation will be abandoned:</p> <p>||
+||
+||</p> <p>Also, an attempt to add for caching directory, which does not reside on Ext4, will fail:</p> <p>||
+||
+||</p> <p>If got this error with</p> <p>||
+||
+||</p> <p>Most probably you have excluded packages in file, in this case to install OptimumCache run:</p> <div class="language- extra-class"><pre class="language-text"><code># yum install optimumcache --disableexcludes=all
+</code></pre></div><p>**OptimumCache prior 0.2-23: **</p> <p>This is well-known ploop problem, which may result in failing such actions as resizing or moving ploop in OptimumCache. To workaround this problem use with</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --move-ploop --ignore-unmount-failure
+</code></pre></div><p>As for resizing ploop, use flavor of command instead:</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --move-ploop /path/to/new/image/file [size GB] --ignore-unmount-failure
+</code></pre></div><p>For your changes to take effect, the server has to be rebooted. Upon reboot, you may clean up manually old ploop image file and file, which resides in the same directory along with old image.</p> <p>**High **</p> <p>High problem was fixed in latest version of OptimumCache (version 0.2-6). The fix is to eliminate calls in OptimumCache operations. To activate this fix in existing installation, flag has to be manually set in</p> <p>To ensure that this parameter is set in the config, set and execute . You will see something like this:</p> <p>optimumcache[1770]: Hash-size: 100000000 min-size: 0 max-size: 18446744071562067968
+optimumcache[1770]: Count: 0 Timeout: 5
+optimumcache[1770]: Max Timeout: 160 Adaptive Timeout Mul/Div: 2/4
+optimumcache[1770]: Iolimit: 0 iopslimit: 0
+optimumcache[1770]: No immediate fsync: Yes
+optimumcache[1771]: Starting OptimumCache monitor</p> <p>To update to version 0.2-6 run:</p> <div class="language- extra-class"><pre class="language-text"><code># yum update optimumcache --enablerepo=cloudlinux-updates-testing
+</code></pre></div><p>**High **</p> <p>Once it is detected that OptimumCache overuses , it is useful to check, whether checksums reindexing process is running. When reindexing is running, high usage is ok, as far it will certainly drop down after reindexing finished.</p> <p>Can be checked in</p> <h1 id="grep-reindexing-var-log-messages"><a href="#grep-reindexing-var-log-messages" aria-hidden="true" class="header-anchor">#</a> grep Reindexing /var/log/messages</h1> <p>Feb  4 17:00:55 CL-default-2 occtl[2654]: Reindexing started</p> <p>If the last line from the output is not , than indexing is in progress.</p> <p>Also, can be checked via command , watch if and identifiers are present in the last series of data:</p> <table><thead><tr><th></th> <th></th></tr></thead> <tbody><tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr> <tr><td></td> <td></td></tr></tbody></table> <p>Uninstalling OptimumCache takes time because of files unmark process, which lasts proportionally to number of files, previously marked for caching with . If you see, that ‘yum remove optimumcache’ command is stuck and you have no time to wait for it to finish, or load, caused by unmarking files, is undesirable for you, open another console terminal and invoke:</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --cancel-pending-jobs
+</code></pre></div><p>This command will cancel unmark operation, being run by yum under the hood. So that yum uninstall package transaction will complete very soon.</p> <p>Rather rare problem, try to forcibly update optimumcache_s with ploop status.</p> <div class="language- extra-class"><pre class="language-text"><code># occtl --remount-cached-points
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/cloudlinux_whmcs_plugin/" class="prev">
+          CloudLinux WHMCS Plugin
+        </a></span> <span class="next"><a href="/hardware_compatibility/">
+          Hardware Compatibility
+        </a>
+        →
+      </span></p></div> </div> <div class="footer" data-v-ac83a848><div data-v-ac83a848><a href="https://cloudlinux.com" data-v-ac83a848><img src="/assets/img/we-are-cloudlinux.783ed390.svg" alt="We are Cloudlinux" data-v-ac83a848></a></div> <div data-v-ac83a848>2018. CloudLinux Inc</div> <div data-v-ac83a848><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>How to</a></div><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>Getting started</a></div><div data-v-ac83a848><a href="https://cloudlinux.zendesk.com/hc/en-us/requests/new" target="_blank" data-v-ac83a848>Contact support</a></div><div data-v-ac83a848><a href="https://www.cloudlinux.com/blog" target="_blank" data-v-ac83a848>Blog</a></div></div> <div class="social" data-v-ac83a848><span data-v-ac83a848>Stay in touch</span> <a href="https://www.facebook.com/cloudlinux/" target="_blank" data-v-ac83a848><img src="/fb.svg" data-v-ac83a848></a><a href="https://twitter.com/cloudlinuxos/" target="_blank" data-v-ac83a848><img src="/tw.svg" data-v-ac83a848></a><a href="https://linkedin.com/company/cloudlinux" target="_blank" data-v-ac83a848><img src="/in.svg" data-v-ac83a848></a><a href="https://www.youtube.com/channel/UCZ3YMHWnMP7TaxlXVay5-aw" target="_blank" data-v-ac83a848><img src="/ytube.svg" data-v-ac83a848></a></div></div> <!----></div></div>
+    <script src="/assets/js/app.0abf6f2a.js" defer></script><script src="/assets/js/12.86ab74a0.js" defer></script>
+  </body>
+</html>

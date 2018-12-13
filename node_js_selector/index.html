@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Node.js Selector | Documentation</title>
+    <meta name="description" content="Kernelcare documentation">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.166b4f65.css" as="style"><link rel="preload" href="/assets/js/app.0abf6f2a.js" as="script"><link rel="preload" href="/assets/js/23.a5cd9404.js" as="script"><link rel="prefetch" href="/assets/js/10.637ec29d.js"><link rel="prefetch" href="/assets/js/11.5bc4e224.js"><link rel="prefetch" href="/assets/js/12.86ab74a0.js"><link rel="prefetch" href="/assets/js/13.57ab5c71.js"><link rel="prefetch" href="/assets/js/14.fd3e69ee.js"><link rel="prefetch" href="/assets/js/15.ae08bd81.js"><link rel="prefetch" href="/assets/js/16.c78fdb9f.js"><link rel="prefetch" href="/assets/js/17.1fdd51cc.js"><link rel="prefetch" href="/assets/js/18.2e9e3c46.js"><link rel="prefetch" href="/assets/js/19.6a071eb7.js"><link rel="prefetch" href="/assets/js/20.03d7f633.js"><link rel="prefetch" href="/assets/js/21.c64caaaa.js"><link rel="prefetch" href="/assets/js/22.c03a1b94.js"><link rel="prefetch" href="/assets/js/24.b90fb854.js"><link rel="prefetch" href="/assets/js/25.42c7c91b.js"><link rel="prefetch" href="/assets/js/26.159622d1.js"><link rel="prefetch" href="/assets/js/27.e8de38ef.js"><link rel="prefetch" href="/assets/js/28.ac2756db.js"><link rel="prefetch" href="/assets/js/3.5515951d.js"><link rel="prefetch" href="/assets/js/4.4d6450cb.js"><link rel="prefetch" href="/assets/js/5.90579adc.js"><link rel="prefetch" href="/assets/js/6.3f73b2ab.js"><link rel="prefetch" href="/assets/js/7.a073d98e.js"><link rel="prefetch" href="/assets/js/8.29039cd1.js"><link rel="prefetch" href="/assets/js/9.ef4b91a3.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.28e1d2e5.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.166b4f65.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/logo.svg" alt="Documentation" class="logo"> <span class="site-name can-hide">Documentation</span></a> <div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value="Search"> <!----></div> <div class="links" style="max-width:nullpx;"><a href="https://cloudlinux.com/trial" target="_blank" class="btn">
+      Try Free
+    </a> <!----></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><!---->  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading open"><span>Content</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/cloudlinux_installation/" class="sidebar-link">Installation</a></li><li><a href="/limits/" class="sidebar-link">Limits</a></li><li><a href="/lve_manager/" class="sidebar-link">LVE Manager</a></li><li><a href="/reseller_limits/" class="sidebar-link">Reseller Limits</a></li><li><a href="/lve-stats_2/" class="sidebar-link">LVE-Stats 2</a></li><li><a href="/cagefs/" class="sidebar-link">CageFS</a></li><li><a href="/mysql_governor/" class="sidebar-link">MySQL Governor</a></li><li><a href="/php_selector/" class="sidebar-link">PHP Selector</a></li><li><a href="/python_and_ruby_selector/" class="sidebar-link">Python</a></li><li><a href="/node_js_selector/" class="active sidebar-link">Node.js Selector</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node_js_selector/#overview-requirements" class="sidebar-link">Overview &amp; Requirements</a></li><li class="sidebar-sub-header"><a href="/node_js_selector/#installation" class="sidebar-link">Installation</a></li><li class="sidebar-sub-header"><a href="/node_js_selector/#command-line-interface" class="sidebar-link">Command Line Interface</a></li><li class="sidebar-sub-header"><a href="/node_js_selector/#user-interface" class="sidebar-link">User Interface</a></li><li class="sidebar-sub-header"><a href="/node_js_selector/#node-js-deployment" class="sidebar-link">Node.js Deployment</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node_js_selector/#remote-usage-of-node-js-interpreters" class="sidebar-link">Remote Usage of Node.js Interpreters</a></li><li class="sidebar-sub-header"><a href="/node_js_selector/#remote-usage-of-the-cloudlinux-selector-utility" class="sidebar-link">Remote Usage of the cloudlinux-selector Utility</a></li></ul></li></ul></li><li><a href="/inodes_limits/" class="sidebar-link">inodes</a></li><li><a href="/kernel_settings/" class="sidebar-link">Kernel Settings</a></li><li><a href="/apache_mod_lsapi/" class="sidebar-link">Apache mod_lsapi</a></li><li><a href="/cloudlinux-fchange/" class="sidebar-link">File Change API</a></li><li><a href="/mod_proctitle/" class="sidebar-link">mod_proctitle</a></li><li><a href="/additional_packages/" class="sidebar-link">Additional Packages</a></li><li><a href="/integration_guide/" class="sidebar-link">Integration Guide</a></li><li><a href="/partner_portal/" class="sidebar-link">Partner Portal</a></li><li><a href="/cloudlinux_network/" class="sidebar-link">CloudLinux Network</a></li><li><a href="/cloudlinux_whmcs_plugin/" class="sidebar-link">CloudLinux WHMCS Plugin</a></li><li><a href="/deprecated/" class="sidebar-link">Deprecated</a></li><li><a href="/hardware_compatibility/" class="sidebar-link">Hardware Compatibility</a></li><li><a href="/cloudlinux_life-cycle/" class="sidebar-link">CloudLinux Life cycle</a></li><li><a href="/downloading_documentation/" class="sidebar-link">Downloading Documentation</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="node-js-selector"><a href="#node-js-selector" aria-hidden="true" class="header-anchor">#</a> Node.js Selector</h1> <p><a href="/overview__requirements/">Overview &amp; Requirements</a> <a href="/overview__requirements.html#requirements/">Requirements</a> <a href="/installation/">Installation</a> <a href="/command_line_interface2/">Command Line Interface</a> <a href="/command_line_interface2.html#hoster/">Hoster</a> <a href="/command_line_interface2.html#enduser/">End User</a> <a href="/user_interface/">User Interface</a> <a href="/user_interface.html#hoster/">Hoster</a> <code>o</code> <a href="/user_interface.html#howtoenabledisablenodejs/">How to enable/disable Node.js</a> <code>o</code> <a href="/user_interface.html#howtomanagenodejs/">How to manage Node.js</a> <code>o</code> <a href="/user_interface.html#applicationscolumn/">Applications column</a> <a href="/user_interface.html#enduser/">End User</a> <code>o</code> <a href="/user_interface.html#howtomanageapplication/">How to manage application</a> <a href="/node_js_deployment/">Node.js Deployment</a> <code>o</code> <a href="/remote_usage_of_node_js_interp/">Remote Usage of Node.js Interpreters</a> <code>o</code> <a href="/remote_usage_of_the_cloudlinux/">Remote Usage of the cloudlinux-selector Utility</a></p> <h2 id="overview-requirements"><a href="#overview-requirements" aria-hidden="true" class="header-anchor">#</a> Overview &amp; Requirements</h2> <p>This feature is available for CloudLinux 7,</p> <p>It supports cPanel and DirectAdmin servers (Plesk is not supported as it already has Node.js support.) For more details, please go to Plesk &amp; Node.js documentation <a href="https://www.plesk.com/blog/product-technology/node-js-plesk-onyx/" target="_blank" rel="noopener noreferrer">here<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> and <a href="https://docs.plesk.com/en-US/onyx/administrator-guide/website-management/nodejs-support.76652/" target="_blank" rel="noopener noreferrer">here<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> .
+For more details about</p> <h2 id="installation"><a href="#installation" aria-hidden="true" class="header-anchor">#</a> Installation</h2> <p>To use Node.js Selector, please install Node.js packages by running the following command:</p> <div class="language- extra-class"><pre class="language-text"><code>yum groupinstall alt-nodejs6 alt-nodejs8 alt-nodejs9
+</code></pre></div><p>Also, please install LVE Manager, LVE Utils and Fusion Passenger by running the following command:</p> <div class="language- extra-class"><pre class="language-text"><code>yum install lvemanager lve-utils ea-apache24-mod-alt-passenger
+</code></pre></div><p>For EasyApache 3:</p> <div class="language- extra-class"><pre class="language-text"><code>yum install lvemanager lve-utils alt-mod-passenger
+</code></pre></div><p>And we recommend to install CageFS for better security (not mandatory) by running the following command:</p> <div class="language- extra-class"><pre class="language-text"><code>yum install cagefs
+</code></pre></div><p>CloudLinux 7:</p> <div class="language- extra-class"><pre class="language-text"><code>systemctl restart cpanel.service
+</code></pre></div><p>CloudLinux 6:</p> <div class="language- extra-class"><pre class="language-text"><code>service cpanel restart
+</code></pre></div><p>To use Node.js Selector, please install Node.js packages by running the following command:</p> <div class="language- extra-class"><pre class="language-text"><code>yum groupinstall alt-nodejs6 alt-nodejs8 alt-nodejs9
+</code></pre></div><p>Also, please install LVE Manager, LVE Utils and Fusion Passenger by running the following command:</p> <div class="language- extra-class"><pre class="language-text"><code>yum install lvemanager lve-utils alt-mod-passenger
+</code></pre></div><p>And we recommend to install CageFS for better security (not mandatory) by running the following command:</p> <div class="language- extra-class"><pre class="language-text"><code>yum install cagefs
+</code></pre></div><h2 id="command-line-interface"><a href="#command-line-interface" aria-hidden="true" class="header-anchor">#</a> Command Line Interface</h2> <p>Below is a list of commands hoster and end user can run in a command line.</p> <p>Get information related to Node.js: default version, list of supported versions, status of , list of users, their applications, etc:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector [get] [--json] --interpreter nodejs
+</code></pre></div><p>output for command:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;selector_enabled&quot;: true | false, 
+  &quot;default_version&quot;: &quot;6.11.3&quot;, 
+  &quot;result&quot;: &quot;success&quot;, 
+  &quot;timestamp&quot;: 1508667174.220027
+  &quot;cache_status&quot;: &quot;ready&quot;         //  or “updating” during automatic yum cache rebuild
+  &quot;available_versions&quot;: {   //  begin of  “versions”
+      &quot;6.11.3&quot; : {   //   begin of version &quot;6.11.3&quot;
+                  &quot;name_modifier&quot;: &quot;&quot;, 
+                  &quot;status&quot;: &quot;enabled&quot;,  //  enabled, disabled, not_installed, installing, removing
+                  “base_dir”: “/opt/alt/alt-nodejs6”   //  empty when version is not installed
+                  “users”: {   //  begin of  “users”
+ 
+                     “user1”: {   //  begin of “user1”
+“homedir”: “/home/user1”,                
+                         “applications”: {    //  begin of “applications”
+                             “apps_dir/app1” : {   //   begin of application “apps_dir/app1”
+                                 “domain”: “cltest1.com”,
+                                 “app_uri”: “apps/my-app1”,
+                                         “app_mode” : “development”,
+                                 “startup_file” : “app.js”,
+                                 “app_status” : “started”,   // ‘started’ or ‘stopped’
+                                 “config_files” : [
+                                     “package.json”,
+                                     “gruntfile.js”
+                                 ],
+                                 “env_vars” : {
+                                     “var1” : “value1”,
+                                     “var2” : “value2”
+                                 },
+                             },   // end of application “apps_dir/app1”
+                             “apps_dir/app2” : {    //   begin of application “apps_dir/app2”
+                                  &lt;&lt; data for application “apps_dir/app2”  (same structure as for application “apps_dir/app1” above) &gt;&gt;
+                             },   //  end of application “apps_dir/app2”
+                         },   //  end of “applications”
+                      },   //  end of “user1”
+                      “user2”: {   //  begin of “user2”
+                          &lt;&lt; data for user “user2”  (same structure as for “user1” above) &gt;&gt;
+                      },   //  end of “user2”
+                  },   // end of “users”
+                },    //  end of version “6.11.3”
+              &quot;8.21.5&quot; : {   //   begin of version &quot;8.21.5&quot;
+                    &lt;&lt; data for version &quot;8.21.5&quot;  (same structure as for version “6.11.3” above) &gt;&gt;
+                },    //  end of version “8.21.5”
+            },    //  end of “versions”
+}   //   end of json
+</code></pre></div><p>Set default version, supported versions, and status of :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set [--json] --interpreter nodejs (--selector-status &lt;enabled,disabled&gt; | --default-version &lt;str&gt; | --supported-versions &lt;str&gt;)
+</code></pre></div><p><strong>Note</strong> that is disabled by default. If an available Node.js version is not installed is always disabled and it is impossible to enable it.</p> <p>To set default Node.js version, please use the following command (note that required Node.js version should be enabled):</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set --json --interpreter=nodejs --default-version=&lt;ver&gt;
+</code></pre></div><p><strong>Examples</strong> :
+This command enables :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set --json --interpreter nodejs --selector-status enabled
+</code></pre></div><p>This command sets default Node.js version as 6:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set --json --interpreter nodejs --default-version 6
+</code></pre></div><p>This command sets supported Node.js version as 8:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set --json --interpreter nodejs --supported-versions='{&quot;6&quot;: false, &quot;8&quot;: true}'
+</code></pre></div><p>Install required Node.js version:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector install-version --json --interpreter nodejs --version 8
+</code></pre></div><p>Uninstall required Node.js version:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector uninstall-version --json --interpreter nodejs --version 8
+</code></pre></div><p>Enable required Node.js version:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector enable-version --json --interpreter nodejs --version 8
+</code></pre></div><p>Disable required Node.js version (note that it is impossible to disable default Node.js version):</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector disable-version --json --interpreter nodejs --version 8
+</code></pre></div><p>Change version for application(s):</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set [--json] --interpreter nodejs ((--user &lt;str&gt; |  --domain &lt;str&gt;) --app-root &lt;str&gt; | --from-version &lt;str&gt;) --new-version &lt;str&gt;
+</code></pre></div><p><strong>Examples</strong> :
+This command changes version for the specific application:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set --json --interpreter nodejs --user user1 --app-root apps_dir/app1 --new-version 8
+</code></pre></div><p>Common output for all commands:</p> <p><strong><em>in case of success</em></strong> :</p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;result&quot;: &quot;success&quot;, 
+  &quot;timestamp&quot;: 1508666792.863358
+}
+</code></pre></div><p><strong><em>in case of error:</em></strong></p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;result&quot;: &quot;Some error message&quot;,
+  &quot;details&quot; : &quot;Traceback: ...&quot; ,
+  &quot;context&quot;: {},
+  &quot;timestamp&quot;: 1508666792.863358
+}
+</code></pre></div><p><strong><em>in case of warning:</em></strong></p> <div class="language- extra-class"><pre class="language-text"><code>{
+  &quot;result&quot;: &quot;success&quot;,
+  &quot;warning&quot; : &quot;Some warning message&quot; ,
+  &quot;context&quot;: {},
+  &quot;timestamp&quot;: 1508666792.863358
+}
+</code></pre></div><p>To resolve issues related to commands (because they are running in the background) you may use this log file
+It contains full output from the performed operation (install or uninstall) and it will be rewritten with each operation.</p> <p>Get config file for the user applications</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector read-config [--json] --interpreter nodejs  [(--user &lt;str&gt; |  --domain &lt;str&gt;)] --app-root &lt;str&gt; --config-file &lt;name&gt;
+</code></pre></div><p>output:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+          &quot;result&quot;: &quot;success&quot;,
+         &quot;timestamp&quot;: 1508666792.863358
+           &quot;data&quot;: &quot;content of config file as Base64 encoded string&quot;
+}
+</code></pre></div><p><strong>Example</strong> :</p> <p>This command gets config file for ’s application :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector read-config --json --interpreter nodejs  --user user1 --app-root app_dir/app1 --config-file package.json
+</code></pre></div><p>Save config file for the user applications</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector save-config [--json] --interpreter nodejs  [(--user &lt;str&gt; | --domain &lt;str&gt;)] --app-root &lt;str&gt; --config-file &lt;path&gt; --content &lt;content of config file as Base64 encoded string&gt;
+</code></pre></div><p>output (the same as for all commands):</p> <div class="language- extra-class"><pre class="language-text"><code>{
+          &quot;result&quot;: &quot;success&quot;, 
+          &quot;timestamp&quot;: 1508666792.863358
+}
+</code></pre></div><h1 id="example-this-command-saves-config-file-for-’s-application"><a href="#example-this-command-saves-config-file-for-’s-application" aria-hidden="true" class="header-anchor">#</a> <strong>Example</strong> :
+This command saves config file for ’s application :</h1> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector save-config --json --interpreter nodejs  --user user1 --app-root app_dir/app1 --config-file package.json  --content                                         VGh1ICAyIE5vdiAxMDo0MzoxMiBFRFQgMjAxNwo=
+</code></pre></div><p>Get a list of applications for the specific user</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector [get] [--json] --interpreter nodejs  [(--user &lt;str&gt; |  --domain &lt;str&gt;)]
+</code></pre></div><p><strong>Example</strong> :
+This command gets a list of applications for the :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector get --json --interpreter nodejs  --user user1
+</code></pre></div><p>Create user application</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector create [--json] --interpreter nodejs [(--user &lt;str&gt; | --domain &lt;str&gt;)] --app-root &lt;str&gt; --app-uri &lt;str&gt; [--version &lt;str&gt;] [--app-mode &lt;str&gt;] [--startup-file &lt;str&gt;] [--env-vars &lt;json string&gt;]
+</code></pre></div><p><strong>Example</strong> :
+This command creates 's application for the domain :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector create --json --interpreter nodejs --user user1 --app-root my_apps/app1 --app-uri apps/app1
+</code></pre></div><p>or</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector create --json --interpreter nodejs --app-root my_apps/app1 --domain xyz.com --app-uri apps/app1
+</code></pre></div><p>Start, restart, stop, and destroy user application</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector (start | restart | stop | destroy) [--json] --interpreter nodejs  [(--user &lt;str&gt; | --domain &lt;str&gt;)] --app-root &lt;str&gt;
+</code></pre></div><p><strong>Example</strong> :
+This command starts 's application:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector start --json --interpreter nodejs --user user1 --app-root my_apps/app1
+</code></pre></div><p>Change properties for an application</p> <div class="language- extra-class"><pre class="language-text"><code>
+</code></pre></div><p><strong>Example 1</strong> :
+This command sets a production mode, new domain , new Node.js version 8, new , new application directory and new startup file for application located on the domain :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set --json --interpreter nodejs  --user user1 --app-root my_apps/app1 --mode production  --new-app-root new_apps/new_app1  --new-domain new.xyz.com --new-app-uri new_apps/app1  --new-version 8  --startup-file new_app.js --env-vars '{ &quot;var1&quot; : &quot;value1&quot;, &quot;var2&quot; : &quot;value2&quot; }'
+</code></pre></div><p><strong>Example 2</strong> :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector set --json --interpreter nodejs  --domain xyz.com --app-root my_apps/app1 --mode production  --new-app-root new_apps/new_app1  --new-domain new.xyz.com --new-app-uri new_apps/app1  --new-version 8  --startup-file new_app.js --env-vars '{ &quot;var1&quot; : &quot;value1&quot;, &quot;var2&quot; : &quot;value2&quot; }'
+</code></pre></div><p>Run command for the user application</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector install-modules [--json] --interpreter nodejs  [(--user &lt;str&gt; |  --domain &lt;str&gt;)] --app-root &lt;str&gt;
+</code></pre></div><p><strong>Example</strong> :
+This command runs _ _ for application:</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector install-modules --json --interpreter nodejs --user user1 --app-root my_apps/app
+</code></pre></div><p>Run a script from file of a user application, arguments are passed to the script</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector run-script [--json] --interpreter nodejs  [(--user &lt;str&gt; | --domain &lt;str&gt;)] --app-root &lt;str&gt; --script-name &lt;str&gt; [-- &lt;args&gt;...]
+</code></pre></div><p><strong>Example</strong> :</p> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector run-script --json --interpreter nodejs --user user1 --app-root my_apps/app --script-name test_script -- --script_opt1 --script_opt2 script_arg1 script_arg2
+</code></pre></div><p>output:</p> <div class="language- extra-class"><pre class="language-text"><code>{
+          &quot;result&quot;: &quot;success&quot;, 
+          &quot;timestamp&quot;: 1508666792.863358
+           &quot;data&quot;: &quot;script output as Base64 encoded string&quot;
+}
+</code></pre></div><p>Activate virtual environment of NodeJS:</p> <div class="language- extra-class"><pre class="language-text"><code>source &lt;home_of_user&gt;/nodevenv/&lt;app_root&gt;/&lt;nodejs_version&gt;/bin/activate
+</code></pre></div><p>This command changes prompt to
+<strong>Example</strong> :</p> <div class="language- extra-class"><pre class="language-text"><code>[newusr@192-168-245-108 ~]$ source /home/newusr/nodevenv/newapp4/newapp3/8/bin/activate
+[newapp4/newapp3 (8)] [newusr@192-168-245-108 ~]$
+</code></pre></div><p>After ativation user can use and node from a virtual environment without full paths.</p> <h2 id="user-interface"><a href="#user-interface" aria-hidden="true" class="header-anchor">#</a> User Interface</h2> <p>Hoster interface allows to enable and disable Node.js, and manage individual Node.js versions.</p> <p>Go to . A list of installed Node.js versions is displayed. There are several columns in the list.</p> <p>— displays Node.js version.
+— Node.js package location.
+— number of applications that use this Node.js version. Click on a digit to go to the list of applications.
+— displays if particular Node.js version is enabled.
+— allows to install, delete, and make default a particular Node.js version.
+To display all changes immediately click link.</p> <p><img src="/images/nodejsgeneral_zoom70.png" alt></p> <p>To enable Node.js move a slider to .
+To disable Node.js move a slider back to .</p> <p><img src="/images/nodejsslider_zoom70.png" alt></p> <p><img src="/images/nodejsselectorlogo_zoom70.png" alt></p> <p>The list of installed Node.js versions allows to enable and disable, install and delete, and set a particular Node.js version as a default.</p> <p><strong>Enable and disable particular Node.js version</strong></p> <p>To enable particular Node.js version do the following:
+Move a disabled slider in the column for a particular Node.js version.
+In the confirmation pop-up click to save changes or to close pop-up.</p> <p><img src="/images/nodejsenable_zoom70.png" alt></p> <p>To disable particular Node.js version do the following:
+Move an enabled slider in the column for a particular Node.js version.
+In the confirmation pop-up click to save changes or to close pop-up.</p> <p><strong>Install and delete particular Node.js version</strong></p> <p>To install particular Node.js version do the following:
+Click button in the column for a particular Node.js version.
+In the confirmation pop-up click to save changes or to close pop-up.</p> <p>To delete particular Node.js version do the following:
+Click icon in the column for a particular Node.js version.
+In the confirmation pop-up click to start uninstall process.
+Or close a pop-up without changes.</p> <p><strong>Note that it is impossible</strong> :
+to remove default Node.js version;
+to remove version with applications;
+to install or remove version if another installation/uninstall process is running.</p> <p><img src="/images/nodejsconfirmation_zoom70.png" alt></p> <p><strong>Make a particular Node.js version as a default</strong></p> <p>To make a particular Node.js version as a default do the following:
+Click icon in the column for a particular Node.js version.
+In the confirmation pop-up click to save changes or to close pop-up.</p> <p><img src="/images/nodejsmakedefault_zoom70.png" alt></p> <p>To view and operate with the list of domains with Node.js versions click on a number in the column for a particular Node.js version. A section with a list of Domains for particular Node.js version will be displayed.</p> <p><img src="/images/nodejsselectordomains_zoom70.png" alt></p> <p>Domains are displayed by three. To load more domains click on button.</p> <p>To change Node.js version for a particular application do the following:
+Click icon in the column in a particular application row. A confirmation pop-up will be displayed.
+In the pop-up choose Node.js version from a drop-down.
+Click to confirm the action or to close the pop-up.
+To refresh state of applications in current version you can click link.</p> <p><strong>Note</strong> that icon in end user interface is absent when Node.js is disabled.</p> <p><img src="/images/nodejslogoenduser_zoom70.png" alt></p> <p>End User interface allows end users to setup and manage Node.js for their web applications.
+Go to .</p> <p>page is displayed.</p> <p><img src="/images/nodejsusermain_zoom70.png" alt></p> <p>There are several columns in the list.
+— application URI including the domain.
+—  application root directory relative to user's home.
+— can be production or development.
+— started/stopped — displays if an application is running or not and version of application.
+— allows to start, restart, stop, edit, and remove a particular application.</p> <p><strong>Start application</strong></p> <p>To start a stopped application do the following:
+Click icon in the column in a stopped application row.
+When an action is completed a icon changes to icon.</p> <p><strong>Stop application</strong></p> <p>To stop a started application do the following:
+Click icon in the column in a started application row.
+When an action is completed a icon changes to icon.</p> <p><img src="/images/nodejsuseruistartstop_zoom70.png" alt></p> <p><strong>Restart application</strong></p> <p>To restart started application do the following:
+Click icon in the column in a started application row. A current row is blocked and when a process is completed it will be unblocked.</p> <p><strong>Remove application</strong></p> <p>To remove application do the following:
+Click icon in the column in a particular application row.
+In the confirmation pop-up click to start removing or to close pop-up.
+When an action is completed an application will be removed from the table and a confirmation pop-up will be displayed.</p> <p><img src="/images/nodejsuseruirestartremove_zoom70.png" alt></p> <p><strong>Edit application</strong></p> <p>To edit application do the following:
+Click icon in the column in a particular application row. A particular application tab opens.</p> <p><img src="/images/nodejseditapp_zoom70.png" alt></p> <p>The following actions are available:
+Restart application — click button.
+Stop Node.js — click button.
+Run JavaScript script — click button to run a command specified in the section of the package.json file. Specify the name of the script to run plus any parameters then click .
+Remove application — click button and confirm the action in a pop-up.
+Change Node.js version — choose Node.js version from a drop-down.
+Change Application mode — choose application mode from a drop-down. Available modes are and .
+Specify Application root — specify in a field a physical address to the application on a server that corresponds with its URI.
+Specify Application URL — specify in a field an HTTP/HTTPS link to the application.
+Specify Application startup file — specify as .
+Run npm install command — click button to install the package(s) described in the file.
+Add Environment variables — click and specify a name and a value.</p> <h2 id="node-js-deployment"><a href="#node-js-deployment" aria-hidden="true" class="header-anchor">#</a> Node.js Deployment</h2> <p>The first approach - <a href="/remote_usage_of_node_js_interp/">remote usage of Node.js Interpreters of different versions</a> .
+The second approach - <a href="/remote_usage_of_the_cloudlinux/">remote usage of the </a> .</p> <h3 id="remote-usage-of-node-js-interpreters"><a href="#remote-usage-of-node-js-interpreters" aria-hidden="true" class="header-anchor">#</a> Remote Usage of Node.js Interpreters</h3> <ol><li>Create a Node.js project in . You can download <a href="http://docs.cloudlinux.com/nodejs_example.zip" target="_blank" rel="noopener noreferrer">this archive<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> and use it as a basis.</li> <li>Install packages on the server in use. See <a href="/installation/">installation instructions</a> .</li> <li>Create an application on the server. You can do it by three ways:
+<code>o</code> Via UI of the Node.js plugin.
+<code>o</code> Using the following command to create an application:</li></ol> <div class="language- extra-class"><pre class="language-text"><code>cloudlinux-selector create --interprete=nodejs --json --app-root=&lt;USER_NAME&gt; --app-uri=&lt;APP_NAME&gt; --app-mode=develompent --version=&lt;VERSION&gt; --domain=&lt;DOMAIN&gt;
+</code></pre></div><p><img src="/images/createapp_zoom70.png" alt></p> <p><code>o</code> Choose a location of the application on the server and synchronize the files with the project.
+4. Set up in the project created.</p> <p><img src="/images/setconfiguration_zoom70.png" alt></p> <p><code>o</code> Specify a path to the remote Node.js interpreter. To be able to specify the remote interpreter, you should install the plugin first. Please find more information <a href="https://www.jetbrains.com/help/idea/configure-node-js-remote-interpreter.html" target="_blank" rel="noopener noreferrer">here<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a> , using server access credentials for a user .
+<code>o</code> Specify initial <em>JavaScript file</em> that will be run with the command (it is the <em>app.js</em> file from the archive).
+<code>o</code> Specify between a local and a remote project . If you have created your application with the or via plugin UI the should be as follows:</p> <div class="language- extra-class"><pre class="language-text"><code>/home/&lt;USER_NAME&gt;/&lt;APP_NAME&gt;
+</code></pre></div><ol start="5"><li>Synchronize the project directories on the local and the remote machine as per specified.</li> <li>Deploy the modules on the remote and the local machine with the command (if there are dependent modules). In the UI you can click the button.</li> <li>Run Node.js application with the configuration set at the <a href="/remote_usage_of_node_js_interp.html#setuprundebugconfigurations/">4th step</a>  .</li></ol> <p><img src="/images/runapp_zoom60.png" alt></p> <ol start="8"><li>If you are using the application from the archive attached, you can see the running application on the 3003 port —</li></ol> <p><strong>Note.</strong> The port should be available to a server user.</p> <p><img src="/images/runningappdomain_zoom70.png" alt></p> <p>The following information should be displayed on this page:
+A version of the running Node.js interpreter;
+Current environment variables;
+A current time.
+So that, you can be sure that deployed modules are used properly.</p> <p>If you’d like to use a different version of Node.js to run an application, change a path to the interpreter in the configuration settings of the running.
+To apply all changes to the project, synchronize all changes with the server and restart the running application.</p> <ol start="9"><li>To debug a script, set breakpoints in the code and run the configuration via Main Menu .</li></ol> <p>Useful links:
+: <a href="https://www.jetbrains.com/help/idea/configure-node-js-remote-interpreter.html" target="_blank" rel="noopener noreferrer">https://www.jetbrains.com/help/idea/configure-node-js-remote-interpreter.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+Plugin : <a href="https://plugins.jetbrains.com/plugin/8116-node-js-remote-interpreter" target="_blank" rel="noopener noreferrer">https://plugins.jetbrains.com/plugin/8116-node-js-remote-interpreter<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>
+: <a href="https://www.jetbrains.com/help/webstorm/configure-node-js-remote-interpreter.html" target="_blank" rel="noopener noreferrer">https://www.jetbrains.com/help/webstorm/configure-node-js-remote-interpreter.html<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <p><strong>Note.</strong> It is not required to install while working in if you are using this approach.</p> <h3 id="remote-usage-of-the-cloudlinux-selector-utility"><a href="#remote-usage-of-the-cloudlinux-selector-utility" aria-hidden="true" class="header-anchor">#</a> Remote Usage of the cloudlinux-selector Utility</h3> <p>Create an application via UI or with the command as described in the Remote Usage of Node.js Interpreters approach, <a href="/remote_usage_of_node_js_interp.html#createapplication/">step 3 (a,b)</a> .
+2. Set up project mapping on the local machine with the created remote application _ _ .
+3. Set up the remote commands of the for the following actions:
+<code>o</code> Restart application;
+<code>o</code> Install packages;
+<code>o</code> Run script;
+<code>o</code> Change Node.js version for the application.
+You can see the running app at
+To apply all changes, restart the application.</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/python_and_ruby_selector/" class="prev">
+          Python
+        </a></span> <span class="next"><a href="/inodes_limits/">
+          inodes
+        </a>
+        →
+      </span></p></div> </div> <div class="footer" data-v-ac83a848><div data-v-ac83a848><a href="https://cloudlinux.com" data-v-ac83a848><img src="/assets/img/we-are-cloudlinux.783ed390.svg" alt="We are Cloudlinux" data-v-ac83a848></a></div> <div data-v-ac83a848>2018. CloudLinux Inc</div> <div data-v-ac83a848><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>How to</a></div><div data-v-ac83a848><a href="#" target="_blank" data-v-ac83a848>Getting started</a></div><div data-v-ac83a848><a href="https://cloudlinux.zendesk.com/hc/en-us/requests/new" target="_blank" data-v-ac83a848>Contact support</a></div><div data-v-ac83a848><a href="https://www.cloudlinux.com/blog" target="_blank" data-v-ac83a848>Blog</a></div></div> <div class="social" data-v-ac83a848><span data-v-ac83a848>Stay in touch</span> <a href="https://www.facebook.com/cloudlinux/" target="_blank" data-v-ac83a848><img src="/fb.svg" data-v-ac83a848></a><a href="https://twitter.com/cloudlinuxos/" target="_blank" data-v-ac83a848><img src="/tw.svg" data-v-ac83a848></a><a href="https://linkedin.com/company/cloudlinux" target="_blank" data-v-ac83a848><img src="/in.svg" data-v-ac83a848></a><a href="https://www.youtube.com/channel/UCZ3YMHWnMP7TaxlXVay5-aw" target="_blank" data-v-ac83a848><img src="/ytube.svg" data-v-ac83a848></a></div></div> <!----></div></div>
+    <script src="/assets/js/app.0abf6f2a.js" defer></script><script src="/assets/js/23.a5cd9404.js" defer></script>
+  </body>
+</html>
